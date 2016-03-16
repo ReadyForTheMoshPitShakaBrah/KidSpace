@@ -1,0 +1,70 @@
+@font-face {
+	font-family:'Yourfont';
+	src: url('css/GothamProBla.otf');
+}
+.menu{
+    position: fixed;
+    margin-left: 20%
+    width: 15%;
+    height:100%;
+    top:0px;
+    background: #f8f8f8;
+    font-family: "GothamProBla"; /* Гарнитура шрифта */
+}
+.main{ 
+    position: absolute;
+    width: 85%;
+    height:100%;
+    left: 15%;
+    top:0px;
+}
+.top{
+ width: 75%;
+ height: 25%;
+ background: #a8603a;   
+}
+.content{
+    width:50%;
+    height: 90%;
+    background: #0c0806;
+    top: 25%;
+    left: 20%;
+}
+.note{
+    position: absolute;
+    width:25%; 
+    height: 90%;
+
+    left:50%;
+    top:25%;
+}
+.logo{
+    width: 100%;
+    height: 10%;
+}
+li{height: 50px;
+}
+ul{
+    list-style-type: none;
+}
+.content div{
+    background: #ff4c00;
+    height: 30%;
+    width: 50%;
+    }
+.exet {
+     position: absolute;
+     right: 5%;
+     top: 5%;
+ }
+ .notification {
+     height: 300px;
+ }
+ .shortnot {
+     border-style: double;
+     height: 50px;
+ }
+ .not {
+     position: relative;
+ }
+ 
