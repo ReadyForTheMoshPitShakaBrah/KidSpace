@@ -1,6 +1,9 @@
 @font-face {
-	font-family:'Yourfont';
-	src: url('css/GothamProBla.otf');
+	font-family: gotham;
+	src: url(fonts/Gotham.ttf);
+}
+body {
+    font-family: gotham;
 }
 .menu {
     left: 20%;
@@ -9,7 +12,6 @@
     height: 100%;
     top: 0px;
     background: #f8f8f8;
-    font-family: "GothamProBla"; /* Гарнитура шрифта */
 }
 .main { 
     background-color: #ffffff;
@@ -42,6 +44,10 @@
 }
 li {
     height: 50px;
+}
+li a {
+    position: absolute;
+    padding-top: 18px;
 }
 ul {
     list-style-type: none;
@@ -121,3 +127,20 @@ ul {
      text-align: center;
      bottom: 1%;
  }
+ #rednote {
+  position: absolute;
+  left: 23%;
+  top: 8px;
+  vertical-align: middle;
+  font-size: 14px;
+  text-align: center;
+  color: white;
+  background: #ff3300;
+  height: 18px;
+  border-radius: 9px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#bubble {
+    position: relative;
+}

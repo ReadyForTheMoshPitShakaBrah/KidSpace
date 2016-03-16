@@ -8,7 +8,13 @@ $(document).ready(function() {
     var articlecount = 2;
     var articles = '';
     var notices = '';
-    var notice = 2;   
+    var notice = 2;
+    var bubblecount = 9;
+    if (bubblecount != 0) {
+        var somestring = '<div id="rednote">';
+        somestring += bubblecount + '</div>';
+        $("#bubble").html(somestring);
+    }   
     function ProgressBar(max,current) {
         var a = ((current/max)*100-2) + '%';
         $('#progress').css({'width': a});
@@ -20,13 +26,26 @@ $(document).ready(function() {
     $(".content").html(articles);
     function createElem(id,title,article,imgUrl){
             var currentArticle = '<div class="ArtText">'
-            currentArticle += '<div class="ArtTitle">'+article+'</div>';
-            currentArticle += '<div>'+title+'</div>';
-            currentArticle += '<div>'+imgUrl+'</div></div>';
+            currentArticle += '<div class="ArtTitle">'+title+'</div>';
+            currentArticle += '<div>'+article+'</div>';
+            if (imgUrl != false) {
+                currentArticle += '<img class="ArtImage" src='+imgUrl+'></div>';
+            }
+            else currentArticle += '</div>';
             $(".content #"+id).html(currentArticle);
     }
-    createElem(1,"Заголовок","текст","URL");
-    createElem(2,"Заголовок","текст","URL");   
+    var article1 = {
+        title: "ВСЕ СЛЕДЫ ВЕДУТ В КИДСПЕЙС",
+        article: "Some text for article #1",
+        url: false,
+    }
+    var article2 = {
+        title: "ВСЕ СЛЕДЫ ВЕДУТ В КИДСПЕЙС",
+        article: "Some text for article #2", 
+        url: "imgs/article1.png",
+    }
+    createElem(1, article1.title, article1.article, article1.url);
+    createElem(2, article2.title, article2.article, article2.url);   
     for (var i = 1; i <= notice; i++) {
         notices += '<div class="not" id="not' + i + '"></div>';
     }
