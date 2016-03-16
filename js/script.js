@@ -10,6 +10,8 @@ $(document).ready(function() {
     var notices = '';
     var notice = 2;
     var bubblecount = 9;
+    var intown = 470;
+    var town = 1000;
     if (bubblecount != 0) {
         var somestring = '<div id="rednote">';
         somestring += bubblecount + '</div>';
@@ -19,7 +21,14 @@ $(document).ready(function() {
         var a = ((current/max)*100-2) + '%';
         $('#progress').css({'width': a});
     }
-  ProgressBar(1000, 470);
+    function townstat(max,current) {
+        var b = 'В городе: ' + current + ' человек';
+        $("#townprogress").html(b);
+        b = 'Свободно: ' + (max-current) + ' мест';
+        $("#freespace").html(b);
+    }
+  ProgressBar(town, intown);
+  townstat(town, intown);
     for (var i = 1; i <= articlecount; i++) {
         articles += '<div class="ArtField" id="' + i + '"></div>';
     }
@@ -27,7 +36,7 @@ $(document).ready(function() {
     function createElem(id,title,article,imgUrl){
             var currentArticle = '<div class="ArtText">'
             currentArticle += '<div class="ArtTitle">'+title+'</div>';
-            currentArticle += '<div>'+article+'</div>';
+            currentArticle += '<div class="ArtWork">'+article+'</div>';
             if (imgUrl != false) {
                 currentArticle += '<img class="ArtImage" src='+imgUrl+'></div>';
             }

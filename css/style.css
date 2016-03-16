@@ -99,7 +99,7 @@ ul {
  #progressbar {
      position: relative;
      left: 35%;
-     top: 45%;
+     top: 55%;
      background: #cccccc;
      height: 24px;
      width: 40%;
@@ -129,7 +129,7 @@ ul {
  }
  #rednote {
   position: absolute;
-  left: 23%;
+  left: 30%;
   top: 8px;
   vertical-align: middle;
   font-size: 14px;
@@ -143,4 +143,27 @@ ul {
 }
 #bubble {
     position: relative;
+}
+.ArtTitle {
+    text-align: center;
+    font-size: 1.2em;
+}
+.ArtWork {
+    text-indent: 20px;
+    padding-top: 20px;
+}
+.ArtImage {
+    padding-top: 20px;
+    position: relative;
+    width: 80%;
+    left: 10%;
+}
+#townprogress {
+    position: relative;
+    top: -30px;
+}
+#freespace {
+    position: absolute;
+    top: 25px;
+    right: 20px;
 }
