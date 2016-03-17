@@ -20,6 +20,7 @@ body {
 	width:18%;
 	height: 100%;
 	left:35%;
+	overflow: auto;
 }
 .tickets{
 	position: absolute;;
@@ -70,27 +71,32 @@ ul {
     width: 100%;
     height: 15%;
 }
-.elemList{
-	height: 10%;
-}
+
 .children{
 position: absolute;
 	width:20%;
-	top:0px;
+
 	left:20%;
 }
 .adult{
   position: absolute;
 	width:20%;
-	top:0px;
-}
-.info{
-	position: absolute;
-	width:80%;
-	top:0px;
-	left: 40%;
 
 }
-.elemList{
-	position: relative;
+.price{
+	position:absolute;
+	width:20%;
+	left:40%;
+	}
+.date{
+	position:absolute;
+	width:40%;
+	left:60%;
 }
+
+
+.ticket{
+	height:10%;
+	border-style:solid;
+
+	}

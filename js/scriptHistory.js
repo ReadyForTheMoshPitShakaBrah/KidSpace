@@ -36,12 +36,16 @@ $(document).ready(function() {
       var currentList='';
       for(var i=0;i<data.length;i++){
 
-        currentList+='<div class="pidaras" id="'+i+'"></div>';
+        currentList='<div class="ticket" id="'+i+'"></div>';
+		$(currentList).appendTo(".list").append(function(){var current='';  
+		current='<div class="children">'+data[i]["childcount"]+'</div><div class="adult">'+data[i]["adultcount"]+'</div><div class="price">'
+		+data[i]["price"]+'</div><div class="date">'+data[i]["date"]+'</div>'; 
+		return current;});
       }
-      $(".list").html(currentList);
+	  console.log(data[1]["price"]);
+     
     });
-    $(".pidaras").html("Хуйня");
-    $(".pidaras").html("Хуйня");
+
 /*
 
   $.getJSON('js/tickets.json', function(data) {
