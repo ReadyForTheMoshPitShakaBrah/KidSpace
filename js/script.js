@@ -33,28 +33,39 @@ $(document).ready(function() {
         articles += '<div class="ArtField" id="' + i + '"></div>';
     }
     $(".content").html(articles);
-    function createElem(id,title,article,imgUrl){
+    function createElem(id, articleElem){
+            var imgLike;
             var currentArticle = '<div class="ArtText">'
-            currentArticle += '<div class="ArtTitle">'+title+'</div>';
-            currentArticle += '<div class="ArtWork">'+article+'</div>';
-            if (imgUrl != false) {
-                currentArticle += '<img class="ArtImage" src='+imgUrl+'></div>';
+            currentArticle += '<div class="ArtTitle">'+articleElem.title+'</div>';
+            currentArticle += '<div class="ArtWork">'+articleElem.article+'</div>';
+            if (articleElem.url != false) {
+                currentArticle += '<div class="ArtImage"><img src='+articleElem.url+'></div>';
             }
-            else currentArticle += '</div>';
+            if(articleElem.isLiked) {
+                imgLike= "<img id='hearton' src='imgs/liked.png'>";
+            }
+            else {
+                imgLike= "<img id='heartoff' src='imgs/nonliked.png'>";
+            }
+            currentArticle += '<div class="likeshare">' + articleElem.likes + imgLike +  '</div></div>';
             $(".content #"+id).html(currentArticle);
     }
     var article1 = {
         title: "ВСЕ СЛЕДЫ ВЕДУТ В КИДСПЕЙС",
         article: "Some text for article #1",
         url: false,
+        likes: 8,
+        isLiked: false,
     }
     var article2 = {
         title: "ВСЕ СЛЕДЫ ВЕДУТ В КИДСПЕЙС",
         article: "Some text for article #2", 
         url: "imgs/article1.png",
+        likes: 69,
+        isLiked: true,
     }
-    createElem(1, article1.title, article1.article, article1.url);
-    createElem(2, article2.title, article2.article, article2.url);   
+    createElem(1, article1);
+    createElem(2, article2);   
     for (var i = 1; i <= notice; i++) {
         notices += '<div class="not" id="not' + i + '"></div>';
     }
@@ -73,4 +84,12 @@ $(document).ready(function() {
         notice--;
         if (notice == 0) $(".notice").hide();
     })  
+     $('#heartoff').on("click", function(event) {
+         
+     })
+    $('#hearton').on("click", function(event) {
+        var target = event.target;
+        alert($($($(target).parent()).parent()).getAttr("id"));
+        
+    })
 });

@@ -74,9 +74,10 @@ ul {
      position: relative;
  }
  .ArtText {
-     left: 5%;
+     display: block;
+     width: 90%;
      top: 5%;
-     right: 5%;
+     left: 5%;
      min-height: 100px;
      position: absolute;
      border: 1px;
@@ -150,13 +151,15 @@ ul {
 }
 .ArtWork {
     text-indent: 20px;
-    padding-top: 20px;
 }
 .ArtImage {
-    padding-top: 20px;
     position: relative;
-    width: 80%;
-    left: 10%;
+    left: 5%;
+    width: 90%;
+    display: block;
+}
+.ArtImage img{
+    width: 100%;
 }
 #townprogress {
     position: relative;
@@ -166,4 +169,8 @@ ul {
     position: absolute;
     top: 25px;
     right: 20px;
+}
+.likeshare {
+    width: 100%;
+    text-align: right;
 }
