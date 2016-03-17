@@ -1,6 +1,6 @@
 @font-face {
 	font-family: gotham;
-	src: url(Gotham.ttf);
+	src: url(GothaProBol.otf);
 }
 body {
     font-family: gotham;
@@ -13,7 +13,7 @@ body {
     top: 0px;
     background: #f8f8f8;
 }
-.main { 
+.main {
     background-color: #ffffff;
     position: absolute;
     width: 45%;
@@ -33,7 +33,7 @@ body {
 }
 .note {
     position: absolute;
-    width: 40%; 
+    width: 40%;
     height: 90%;
     left: 60%;
     top: 25%;

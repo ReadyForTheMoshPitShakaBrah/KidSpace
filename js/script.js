@@ -10,13 +10,13 @@ $(document).ready(function() {
     var notices = '';
     var notice = 2;
     var bubblecount = 9;
-    var intown = 470;
-    var town = 1000;
+    var intown = 80;
+    var town = 100;
     if (bubblecount != 0) {
         var somestring = '<div id="rednote">';
         somestring += bubblecount + '</div>';
         $("#bubble").html(somestring);
-    }   
+    }
     function ProgressBar(max,current) {
         var a = ((current/max)*100-2) + '%';
         $('#progress').css({'width': a});
@@ -59,23 +59,23 @@ $(document).ready(function() {
     }
     var article2 = {
         title: "ВСЕ СЛЕДЫ ВЕДУТ В КИДСПЕЙС",
-        article: "Some text for article #2", 
+        article: "Some text for article #2",
         url: "imgs/article1.png",
         likes: 69,
         isLiked: true,
     }
     createElem(1, article1);
-    createElem(2, article2);   
+    createElem(2, article2);
     for (var i = 1; i <= notice; i++) {
         notices += '<div class="not" id="not' + i + '"></div>';
     }
-    $(".notification").html(notices);  
+    $(".notification").html(notices);
     function createNotice(id,text){
-            var currentText = '<div class="exet"> X </div>';           
+            var currentText = '<div class="exet"> X </div>';
             currentText += '<div class="shortnot">'+text+'</div>';
             $(".notification #not"+id).html(currentText);
     }
-    createNotice(1,"blalalal");  
+    createNotice(1,"blalalal");
     createNotice(2,"FUCKU");
     if (notice == 0) $(".notice").hide();
     $(".exet").on("click", function(event) {
@@ -83,13 +83,13 @@ $(document).ready(function() {
         $($(target).parent()).hide();
         notice--;
         if (notice == 0) $(".notice").hide();
-    })  
+    })
      $('#heartoff').on("click", function(event) {
-         
+
      })
     $('#hearton').on("click", function(event) {
         var target = event.target;
         alert($($($(target).parent()).parent()).getAttr("id"));
-        
+
     })
 });
