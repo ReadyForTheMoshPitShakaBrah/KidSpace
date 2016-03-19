@@ -81,7 +81,7 @@ $(document).ready(function() {
     if (target.tagName != 'DIV') {
     target = target.parentNode;
     }
-    alert($(target).closest(".ticket").attr('id')); ////// eto id elementa po kotoromy click
+    
 	show($(target).closest(".ticket").attr('id'));
 	$('.click').removeClass('click').addClass('ticket');
 	$(target).removeClass('ticket').addClass('click');
