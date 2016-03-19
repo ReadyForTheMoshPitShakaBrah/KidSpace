@@ -97,6 +97,7 @@ ul {
 
 
 .ticket{
+	cursor:pointer;
 	height:10%;
 	border-style:solid;
 	width: 98%;
@@ -115,6 +116,7 @@ ul {
 	display: inline-block;
 }
 .click{
+	cursor:default;
 	height:10%;
 	border-style:solid;
 	width: 98%;

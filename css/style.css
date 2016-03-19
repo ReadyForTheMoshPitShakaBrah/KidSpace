@@ -56,6 +56,7 @@ ul {
      position: absolute;
      right: 10px;
      top: 10px;
+	 cursor:pointer;
  }
  .shortnot {
      text-align: center;
@@ -173,4 +174,7 @@ ul {
 .likeshare {
     width: 100%;
     text-align: right;
+}
+.likediv img{
+	cursor:pointer;
 }
