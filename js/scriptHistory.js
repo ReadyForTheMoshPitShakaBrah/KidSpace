@@ -76,6 +76,7 @@ $(document).ready(function() {
 	  });
   }
   show(0); //при загрузке страницы выбирается первый элемент
+  $('#0').attr('class','click');
   $(".list").on('click',function(event){
     var target = event.target;
     if (target.tagName != 'DIV') {
@@ -84,7 +85,7 @@ $(document).ready(function() {
     
 	show($(target).closest(".ticket").attr('id'));
 	$('.click').removeClass('click').addClass('ticket');
-	$(target).removeClass('ticket').addClass('click');
+	$(target).closest('.ticket').removeClass('ticket').addClass('click');
 
 	
   });

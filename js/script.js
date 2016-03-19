@@ -108,7 +108,7 @@ $(document).ready(function() {
         var target = event.target;
         if($(target).attr('src')=='imgs/liked.png') {
        		$(target).attr('src','imgs/nonliked.png');
-       		arrayArcticle[$($($(target).parent()).parent().parent()).attr('id')].likes--;
+       		arrayArcticle[$(target).closest('.ArtField').attr('id')].likes--;
     	}
     	else {
     		$(target).attr('src','imgs/liked.png');
