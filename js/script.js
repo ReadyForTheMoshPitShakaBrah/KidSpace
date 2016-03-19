@@ -10,16 +10,34 @@ $(document).ready(function() {
     var notices = '';
     var notice = 2;
     var bubblecount = 9;
-    var intown = 80;
-    var town = 100;
+    var intown = 900;
+    var town = 1000;
     if (bubblecount != 0) {
         var somestring = '<div id="rednote">';
         somestring += bubblecount + '</div>';
         $("#bubble").html(somestring);
-    }
+    }   
+
     function ProgressBar(max,current) {
-        var a = ((current/max)*100-2) + '%';
-        $('#progress').css({'width': a});
+        var b=0;
+        var a = ((current/max)*100) + '%';
+        var c = (current/max)*100-3;   
+            if(c<20){
+                alert();
+                $('#progress').css({"background-color" : "#00cc33",});
+            }
+            if(c>80){
+                 $('#progress').css({"background-color" : "#ff3333"});
+            }
+
+        var d = setInterval(function () {
+        b+=c/50;
+        $('#progress').css({'width': b+'%'});
+            if (b>=c) {
+            	$('#progress').css({'width': c+'%'});
+                clearInterval(d);
+            }
+        },20);
     }
     function townstat(max,current) {
         var b = 'В городе: ' + current + ' человек';
@@ -29,7 +47,7 @@ $(document).ready(function() {
     }
   ProgressBar(town, intown);
   townstat(town, intown);
-    for (var i = 1; i <= articlecount; i++) {
+    for (var i = 0; i < articlecount; i++) {
         articles += '<div class="ArtField" id="' + i + '"></div>';
     }
     $(".content").html(articles);
@@ -41,41 +59,43 @@ $(document).ready(function() {
             if (articleElem.url != false) {
                 currentArticle += '<div class="ArtImage"><img src='+articleElem.url+'></div>';
             }
-            if(articleElem.isLiked) {
-                imgLike= "<img id='hearton' src='imgs/liked.png'>";
-            }
+            if(articleElem.isLiked) {            
+       	        imgLike= "<div class='likediv'><img src=imgs/liked.png></img></div>";
+			}
             else {
-                imgLike= "<img id='heartoff' src='imgs/nonliked.png'>";
-            }
-            currentArticle += '<div class="likeshare">' + articleElem.likes + imgLike +  '</div></div>';
+                imgLike= "<div class='likediv'><img src=imgs/nonliked.png></img></div>";
+              }
+            currentArticle += '<div class="likeshare" id="likeshare'+id+'">' + articleElem.likes + '</div>'+imgLike + '</div>';
             $(".content #"+id).html(currentArticle);
     }
-    var article1 = {
-        title: "ВСЕ СЛЕДЫ ВЕДУТ В КИДСПЕЙС",
-        article: "Some text for article #1",
-        url: false,
-        likes: 8,
-        isLiked: false,
-    }
-    var article2 = {
-        title: "ВСЕ СЛЕДЫ ВЕДУТ В КИДСПЕЙС",
-        article: "Some text for article #2",
-        url: "imgs/article1.png",
-        likes: 69,
-        isLiked: true,
-    }
-    createElem(1, article1);
-    createElem(2, article2);
+    var arrayArcticle = [
+          {
+            title: "ВСЕ СЛЕДЫ ВЕДУТ В КИДСПЕЙС",
+            article: "Some text for article #1",
+            url: false,
+            likes: 8,
+            isLiked: true,
+        },
+          {
+            title: "ВСЕ СЛЕДЫ ВЕДУТ В КИДСПЕЙС",
+            article: "Some text for article #2", 
+            url: "imgs/article1.png",
+            likes: 69,
+            isLiked: false,
+        }
+    ];
+    createElem(0, arrayArcticle[0]);
+    createElem(1, arrayArcticle[1]);   
     for (var i = 1; i <= notice; i++) {
         notices += '<div class="not" id="not' + i + '"></div>';
     }
-    $(".notification").html(notices);
+    $(".notification").html(notices);  
     function createNotice(id,text){
-            var currentText = '<div class="exet"> X </div>';
+            var currentText = '<div class="exet"> X </div>';           
             currentText += '<div class="shortnot">'+text+'</div>';
             $(".notification #not"+id).html(currentText);
     }
-    createNotice(1,"blalalal");
+    createNotice(1,"blalalal");  
     createNotice(2,"FUCKU");
     if (notice == 0) $(".notice").hide();
     $(".exet").on("click", function(event) {
@@ -83,13 +103,17 @@ $(document).ready(function() {
         $($(target).parent()).hide();
         notice--;
         if (notice == 0) $(".notice").hide();
-    })
-     $('#heartoff').on("click", function(event) {
-
-     })
-    $('#hearton').on("click", function(event) {
+    })  
+     $('.likediv').on("click", function(event) {
         var target = event.target;
-        alert($($($(target).parent()).parent()).getAttr("id"));
-
-    })
+        if($(target).attr('src')=='imgs/liked.png') {
+       		$(target).attr('src','imgs/nonliked.png');
+       		arrayArcticle[$($($(target).parent()).parent().parent()).attr('id')].likes--;
+    	}
+    	else {
+    		$(target).attr('src','imgs/liked.png');
+       		arrayArcticle[$(target).closest('.ArtField').attr('id')].likes++;
+       	}
+       		$('#likeshare'+$(target).closest('.ArtField').attr('id')).html(arrayArcticle[$(target).closest('.ArtField').attr('id')].likes);
+        });
 });

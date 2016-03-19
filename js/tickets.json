@@ -7,35 +7,43 @@
         "tickets": [
             {
                 "type": "child",
-                "ticketid": 1
+                "ticketid": "11212"
             },
             {
                 "type": "adult",
-                "ticketid": 2
+                "ticketid": "23232"
             },
             {
                 "type": "child",
-                "ticketid": 3
+                "ticketid": 332323
             }
         ]
     },
     {
-        "price": 9000,
+        "price": 9345,
         "childcount": 2,
-        "adultcount": 1,
+        "adultcount": 4,
         "date": "17.03.2016",
         "tickets": [
             {
                 "type": "child",
-                "ticketid": 1
+                "ticketid": 1124
             },
             {
                 "type": "adult",
-                "ticketid": 2
+                "ticketid": 2534
+            },
+            {
+                "type": "adult",
+                "ticketid": 2234
+            },
+            {
+                "type": "adult",
+                "ticketid": 2234
             },
             {
                 "type": "child",
-                "ticketid": 3
+                "ticketid": 3345
             }
         ]
     },
@@ -225,7 +233,7 @@
     "childcount": 2,
     "adultcount": 1,
     "date": "18.03.2016",
-    "ticket": [
+    "tickets": [
       {
         "type": "child",
         "ticketid": 4
@@ -245,7 +253,7 @@
     "childcount": 3,
     "adultcount": 0,
     "date": "18.03.2016",
-    "ticket": [
+    "tickets": [
       {
         "type": "child",
         "ticketid": 7

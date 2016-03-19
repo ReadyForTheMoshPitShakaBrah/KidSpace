@@ -32,7 +32,6 @@ $(document).ready(function() {
   }
 
     $.getJSON('js/tickets.json', function(data) {
-      alert(data.length);
       var currentList='';
       for(var i=0;i<data.length;i++){
 
@@ -46,19 +45,8 @@ $(document).ready(function() {
      
     });
 
-/*
 
-  $.getJSON('js/tickets.json', function(data) {
-    var current='';
-    for(var i=0;i<data.length;i++){
-      console.log(data[i]["price"]);
-      current='<div class="price">'+data[i]["price"]+'</div>';
-      console.log(current);
 
-    }
-  });
-  $("#1").html("Хуйня");
-  $("#0").html("Хуйня");
   var tickets1 = {
       price: "123",
       date: "123123",
@@ -70,5 +58,31 @@ $(document).ready(function() {
     date: "Some text for article #1",
     children: 8,
     adult: 12,
-  }*/
+  }
+  function show(id){ //  выводит в правый блок инфу о билетах 
+	  $.getJSON('js/tickets.json', function(data){
+		  var empty='';
+		  $('.adultTickets').html('');
+		  $('.childTickets').html('');
+	  for(var i=0; i<data[id].tickets.length;i++){
+		  if(data[id].tickets[i].type==="adult"){
+		  empty='<div class="info"><p>смейный билет</p><p>взрослый 15+ лет</p>#'+data[id].tickets[i].ticketid+'</div>';
+	      $('.adultTickets').append(empty);
+		  }
+		  else{
+		  empty='<div class="info"><p>смейный билет</p><p>ждетский 7 лет</p>#'+data[id].tickets[i].ticketid+'</div>';
+	      $('.childTickets').append(empty);}
+	  }
+	  });
+  }
+  show(0); //при загрузке страницы выбирается первый элемент
+  $(".list").on('click',function(event){
+    var target = event.target;
+    if (target.tagName != 'DIV') {
+    target = target.parentNode;
+    }
+    alert($(target).closest(".ticket").attr('id')); ////// eto id elementa po kotoromy click
+	show($(target).closest(".ticket").attr('id'));
+	
+  });
 });
