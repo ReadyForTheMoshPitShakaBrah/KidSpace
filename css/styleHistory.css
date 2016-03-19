@@ -114,3 +114,8 @@ ul {
 	width:50%;
 	display: inline-block;
 }
+.click{
+	height:10%;
+	border-style:solid;
+	width: 98%;
+	background:#6396ca;}
