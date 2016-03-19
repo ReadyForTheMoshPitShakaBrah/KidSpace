@@ -1,9 +1,21 @@
 @font-face {
 	font-family: gotham;
 	src: url(GothaProLig.otf);
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+		font-family: gotham;
+		src: url(GothaProBol.otf);
+		font-weight: bold;;
+		font-style: normal;
 }
 body {
     font-family: gotham;
+}
+a {
+	color: black;
+	text-decoration: none;
 }
 .menu {
     left: 20%;
@@ -29,7 +41,7 @@ body {
 .content {
     position: relative;
     width:60%;
-    height: 90%;
+
 }
 .note {
     position: absolute;
@@ -59,11 +71,12 @@ ul {
 	 cursor:pointer;
  }
  .shortnot {
+	 min-height: 60px;
+	 	 padding-top: 15%;
      text-align: center;
      left: 10%;
      top: 10%;
      right: 10%;
-     height: 100px;
      border: 1px;
      box-shadow: 0 0 5px rgba(0,0,0,0.2);
  }
@@ -73,6 +86,7 @@ ul {
  .ArtField {
      min-height: 120px;
      position: relative;
+		 margin-bottom: 20px;
  }
  .ArtText {
 	 position: relative;
@@ -83,6 +97,7 @@ ul {
      box-shadow: 0 0 5px rgba(0,0,0,0.2);
  }
  .notice {
+	 width: 80%;
      position: relative;
  }
  .notice div {
@@ -145,11 +160,15 @@ ul {
     position: relative;
 }
 .ArtTitle {
-    text-align: center;
-    font-size: 1.2em;
+	font-weight: bold;
+	padding-top: 10px;
+	height: 40px;
+  text-align: center;
+  font-size: 1.2em;
 }
 .ArtWork {
-    text-indent: 20px;
+	padding: 10px;
+  text-indent: 20px;
 }
 .ArtImage {
     position: relative;
@@ -158,6 +177,7 @@ ul {
     display: block;
 }
 .ArtImage img{
+	margin-top: 20px;
     width: 100%;
 }
 #townprogress {
@@ -181,11 +201,13 @@ ul {
 	position: relative;
 }
 .LikesCount {
+	height: 22px;
 	width: 30%;
 	top: 3px;
 }
 .likediv {
-	width: 30%;
+	height: 22px;
+	width: 24px;
 	top: 8px;
 }
 .likediv img {
@@ -194,4 +216,10 @@ ul {
 .share {
 	width: 40%;
 	top: 3px;
+}
+.fa-times {
+	color: #969696;
+}
+.fa-share-alt {
+	color: #969696;
 }

@@ -2,6 +2,10 @@
 	font-family: gotham;
 	src: url(GothaProLig.otf);
 }
+a {
+	text-decoration: none;
+	color: black;
+}
 body {
     font-family: gotham;
 }
@@ -22,6 +26,7 @@ body {
 	overflow: auto;
 }
 .tickets{
+	overflow: auto;
 	top:0;
 	position: fixed;
 	border-width: 0px 1px 0px 1px;
@@ -33,8 +38,8 @@ body {
 	left:52.5%;
 	padding-left: 20px;
 }
-#ChildTitle {
-	padding-top: 30px;
+h4 {
+	font-size: 22px;
 }
 .children span, .adult span {
 	position: relative;
@@ -100,14 +105,17 @@ ul {
 	height: 10%;
 }
 .price{
-	position:absolute;
-	width:30%;
-	left:40%;
+	height: 60%;
+	display: inline-block;
+	position: relative;
+	width:100%;
+	font-size: 25px;
 	}
 .date{
-	position:absolute;
-	width:30%;
-	left:70%;
+	height: 40%;
+	display: inline-block;
+	position: relative;
+	width:100%;
 }
 .ticket{
 	cursor:pointer;
@@ -126,7 +134,8 @@ ul {
 	overflow: auto;
 }
 .info{
-	width:40%;
+	margin-bottom: 30px;
+	width: 50%;
 	display: inline-block;
 }
 .click{
@@ -134,4 +143,37 @@ ul {
 	height:10%;
 	width: 98%;
 	background:#6396ca;
+}
+.blueround {
+	background: #6396ca;
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+	text-align: center;
+	display: inline-block;
+}
+.blockinfo {
+	width: 60%;
+	display: inline-block;
+}
+.blockinfo p {
+	margin: 0;
+}
+.blueround .fa-print {
+	position: absolute;
+	text-align: center;
+	left: 15px;
+	top: 17px;
+	color: white;
+}
+.around {
+	position: relative;
+	width: 40%;
+	display: inline-block;
+}
+.RightBlock {
+	position: relative;
+	height: 100%;
+	left: 50%;
+	width: 50%;
 }

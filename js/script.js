@@ -47,13 +47,165 @@ $(document).ready(function() {
     }
   ProgressBar(town, intown);
   townstat(town, intown);
-    for (var i = 0; i < articlecount; i++) {
-        articles += '<div class="ArtField" id="' + i + '"></div>';
-    }
-    $(".content").html(articles);
+  var arrayArcticle = [
+        {
+          title: "ВСЕ СЛЕДЫ ВЕДУТ В КИДСПЕЙС",
+          article: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          url: false,
+          likes: 8,
+          isLiked: true,
+      },
+        {
+          title: "ВСЕ СЛЕДЫ ВЕДУТ В КИДСПЕЙС",
+          article: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          url: "imgs/article1.png",
+          likes: 69,
+          isLiked: false,
+      },
+        {
+          title: "ВСЕ СЛЕДЫ ВЕДУТ В КИДСПЕЙС",
+          article: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          url: "imgs/article1.png",
+          likes: 69,
+          isLiked: false,
+      },
+        {
+          title: "ВСЕ СЛЕДЫ ВЕДУТ В КИДСПЕЙС",
+          article: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          url: "imgs/article1.png",
+          likes: 69,
+          isLiked: false,
+      },
+        {
+          title: "ВСЕ СЛЕДЫ ВЕДУТ В КИДСПЕЙС",
+          article: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          url: "imgs/article1.png",
+          likes: 69,
+          isLiked: false,
+      },
+        {
+          title: "ВСЕ СЛЕДЫ ВЕДУТ В КИДСПЕЙС",
+          article: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          url: "imgs/article1.png",
+          likes: 69,
+          isLiked: false,
+      },
+        {
+          title: "ВСЕ СЛЕДЫ ВЕДУТ В КИДСПЕЙС",
+          article: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          url: "imgs/article1.png",
+          likes: 69,
+          isLiked: false,
+      },
+        {
+          title: "ВСЕ СЛЕДЫ ВЕДУТ В КИДСПЕЙС",
+          article: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          url: "imgs/article1.png",
+          likes: 69,
+          isLiked: false,
+      },
+        {
+          title: "ВСЕ СЛЕДЫ ВЕДУТ В КИДСПЕЙС",
+          article: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          url: "imgs/article1.png",
+          likes: 69,
+          isLiked: false,
+      },
+        {
+          title: "ВСЕ СЛЕДЫ ВЕДУТ В КИДСПЕЙС",
+          article: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          url: "imgs/article1.png",
+          likes: 69,
+          isLiked: false,
+      },
+        {
+          title: "ВСЕ СЛЕДЫ ВЕДУТ В КИДСПЕЙС",
+          article: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          url: "imgs/article1.png",
+          likes: 69,
+          isLiked: false,
+      },
+        {
+          title: "ВСЕ СЛЕДЫ ВЕДУТ В КИДСПЕЙС",
+          article: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          url: "imgs/article1.png",
+          likes: 69,
+          isLiked: false,
+      },
+        {
+          title: "ВСЕ СЛЕДЫ ВЕДУТ В КИДСПЕЙС",
+          article: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          url: "imgs/article1.png",
+          likes: 69,
+          isLiked: false,
+      },
+        {
+          title: "ВСЕ СЛЕДЫ ВЕДУТ В КИДСПЕЙС",
+          article: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          url: "imgs/article1.png",
+          likes: 69,
+          isLiked: false,
+      },
+        {
+          title: "ВСЕ СЛЕДЫ ВЕДУТ В КИДСПЕЙС",
+          article: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          url: "imgs/article1.png",
+          likes: 69,
+          isLiked: false,
+      },
+        {
+          title: "ВСЕ СЛЕДЫ ВЕДУТ В КИДСПЕЙС",
+          article: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          url: "imgs/article1.png",
+          likes: 69,
+          isLiked: false,
+      },
+        {
+          title: "ВСЕ СЛЕДЫ ВЕДУТ В КИДСПЕЙС",
+          article: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          url: "imgs/article1.png",
+          likes: 69,
+          isLiked: false,
+      },
+        {
+          title: "ВСЕ СЛЕДЫ ВЕДУТ В КИДСПЕЙС",
+          article: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          url: "imgs/article1.png",
+          likes: 69,
+          isLiked: false,
+      },
+        {
+          title: "ВСЕ СЛЕДЫ ВЕДУТ В КИДСПЕЙС",
+          article: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          url: "imgs/article1.png",
+          likes: 69,
+          isLiked: false,
+      },
+        {
+          title: "ВСЕ СЛЕДЫ ВЕДУТ В КИДСПЕЙС",
+          article: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          url: "imgs/article1.png",
+          likes: 69,
+          isLiked: false,
+      },
+        {
+          title: "ВСЕ СЛЕДЫ ВЕДУТ В КИДСПЕЙС",
+          article: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          url: "imgs/article1.png",
+          likes: 69,
+          isLiked: false,
+      },
+        {
+          title: "ВСЕ СЛЕДЫ ВЕДУТ В КИДСПЕЙС",
+          article: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          url: "imgs/article1.png",
+          likes: 69,
+          isLiked: false,
+      }
+  ];
     function createElem(id, articleElem){
             var imgLike;
-            var currentArticle = '<div class="ArtText">'
+            var currentArticle = '<div class="ArtField" id="'+id+'"><div class="ArtText">'
             currentArticle += '<div class="ArtTitle">'+articleElem.title+'</div>';
             currentArticle += '<div class="ArtWork">'+articleElem.article+'</div>';
             if (articleElem.url != false) {
@@ -65,46 +217,50 @@ $(document).ready(function() {
             else {
                 imgLike= "<div class='likediv'><img src=imgs/nonliked.png></img></div>";
               }
-            currentArticle += '<div class="likeshare"><div class="LikesCount">' + articleElem.likes + '</div>'+ imgLike + '<div class="share"><i class="fa fa-share-alt"></i></div></div>';
-            $(".content #"+id).html(currentArticle);
+            currentArticle += '<div class="likeshare"><div class="LikesCount">' + articleElem.likes + '</div>'+ imgLike + '<div class="share"><i class="fa fa-share-alt fa-lg"></i></div></div></div>';
+            $(".content").append(currentArticle);
     }
-    var arrayArcticle = [
-          {
-            title: "ВСЕ СЛЕДЫ ВЕДУТ В КИДСПЕЙС",
-            article: "Some text for article #1",
-            url: false,
-            likes: 8,
-            isLiked: true,
-        },
-          {
-            title: "ВСЕ СЛЕДЫ ВЕДУТ В КИДСПЕЙС",
-            article: "Some text for article #2",
-            url: "imgs/article1.png",
-            likes: 69,
-            isLiked: false,
-        }
-    ];
-    createElem(0, arrayArcticle[0]);
-    createElem(1, arrayArcticle[1]);
+    var  number=0;
+
+    function paging() {
+    for (var i = number*5; i < number*5+5; i++) {
+      if (i == arrayArcticle.length) break;
+      createElem(i, arrayArcticle[i]);
+    }
+    number++;
+
+    }
+        paging();
+        $(window).scroll(function() {
+          var w_h = $('.content').height();
+          //получаем высоту рабочего пространства браузера
+          if ($(this).scrollTop()+$(window).height()>w_h){  paging();   //если мы прокрутили сайт вниз больше, чем на первоначально видимую высоту,
+            // грузим следующую часть контента.
+          }
+        });
+
     for (var i = 1; i <= notice; i++) {
         notices += '<div class="not" id="not' + i + '"></div>';
     }
+
     $(".notification").html(notices);
     function createNotice(id,text){
-            var currentText = '<div class="exet"> X </div>';
+            var currentText = '<div class="exet"><i class="fa fa-times"></i></div>';
             currentText += '<div class="shortnot">'+text+'</div>';
             $(".notification #not"+id).html(currentText);
     }
-    createNotice(1,"blalalal");
-    createNotice(2,"FUCKU");
+    createNotice(1,"У вашего ребёнка всё хорошо");
+    createNotice(2,"А вот теперь у вашего ребёнка траблы");
     if (notice == 0) $(".notice").hide();
+
     $(".exet").on("click", function(event) {
         var target = event.target;
-        $($(target).parent()).hide();
+        $($($(target).parent()).parent()).hide();
         notice--;
         if (notice == 0) $(".notice").hide();
     })
-     $('.likediv img').on("click", function(event) {
+     $('body').on("click",'.likediv img', function(event) {
+
         var target = event.target;
         if($(target).attr('src')=='imgs/liked.png') {
        		$(target).attr('src','imgs/nonliked.png');

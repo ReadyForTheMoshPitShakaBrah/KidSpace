@@ -12,7 +12,7 @@ $(document).ready(function() {
 		$(currentList).appendTo(".list").append(function(){var current='';
 		current='<div class="children"><span class="fa fa-child fa-x"></span><span class="InnerText"><p>'+data[i]["childcount"] + '</p></span>' +
     '</div><div class="adult"><span class="fa fa-male fa-lg"></span><span class="InnerText"><p>' + data[i]["adultcount"] + '</p></span>' +
-    '</div><div class="price">' + data[i]["price"] + '</div><div class="date">' + data[i]["date"] + '</div>';
+    '</div><div class="RightBlock"><div class="price">' + data[i]["price"] + ' ₽</div><div class="date">' + data[i]["date"] + '</div></div>';
 		return current;});
       }
     });
@@ -25,11 +25,11 @@ $(document).ready(function() {
 
 	  for(var i=0; i<data[id].tickets.length;i++){
 		  if(data[id].tickets[i].type=="adult"){
-		  empty='<div class="info"><p>Семейный билет</p><p>Взрослый 15+ лет</p>#'+data[id].tickets[i].ticketid+'</div>';
+		  empty='<div class="info"><div class="blockinfo"><p>Семейный билет</p><p>Взрослый 15+ лет</p>#'+data[id].tickets[i].ticketid+'</div><div class="around"><div class=blueround><i class="fa fa-print fa-lg"></i></div></div></div>';
 	      $('.adultTickets').append(empty);
 		  }
 		  else{
-		  empty='<div class="info"><p>Семейный билет</p><p>Детский 7 лет</p>#'+data[id].tickets[i].ticketid+'</div>';
+		  empty='<div class="info"><div class="blockinfo"><p>Семейный билет</p><p>Детский 7 лет</p>#'+data[id].tickets[i].ticketid+'</div><div class="around"><div class=blueround><i class="fa fa-print fa-lg"></i></div></div></div>';
 	      $('.childTickets').append(empty);}
 	  }
 	  });
