@@ -1,6 +1,6 @@
 @font-face {
 	font-family: gotham;
-	src: url(GothaProBol.otf);
+	src: url(GothaProLig.otf);
 }
 body {
     font-family: gotham;
@@ -13,7 +13,6 @@ body {
     top: 0px;
     background: #f8f8f8;
 }
-
 .list{
 	top:0;
  	position: absolute;
@@ -25,12 +24,28 @@ body {
 .tickets{
 	top:0;
 	position: fixed;
-	background: #d73231;
+	border-width: 0px 1px 0px 1px;
+	border-color: #6396ca;
+	border-style: solid;
+	background: #ffffff;
 	width:32%;
 	height: 100%;
-	left:53%;
+	left:52.5%;
+	padding-left: 20px;
 }
-
+#ChildTitle {
+	padding-top: 30px;
+}
+.children span, .adult span {
+	position: relative;
+	height: 30%;
+	width: 100%;
+	text-align: center;
+	top: 20%;
+}
+.children p, .adult p {
+	margin: 0;
+}
 li {
     height: 50px;
 }
@@ -75,49 +90,48 @@ ul {
 
 .children{
 	position: absolute;
-	width:5%;
-
-	left:5%;
+	width:20%;
+	height: 10%;
 }
 .adult{
   position: absolute;
-	width:5%;
-
+	width:20%;
+	left: 20%;
+	height: 10%;
 }
 .price{
 	position:absolute;
-	width:20%;
-	left:15%;
+	width:30%;
+	left:40%;
 	}
 .date{
 	position:absolute;
-	width:40%;
-	left:60%;
+	width:30%;
+	left:70%;
 }
-
-
 .ticket{
 	cursor:pointer;
 	height:10%;
+	border-width: 0px 0px 1px 0px;
+	border-color: #f2f2f2;
 	border-style:solid;
 	width: 98%;
 	}
 .content {
 	top:0;
  	position: absolute;
-
 	width:19%;
 	height: 100%;
 	left:35%;
 	overflow: auto;
 }
 .info{
-	width:50%;
+	width:40%;
 	display: inline-block;
 }
 .click{
 	cursor:default;
 	height:10%;
-	border-style:solid;
 	width: 98%;
-	background:#6396ca;}
+	background:#6396ca;
+}

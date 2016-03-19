@@ -1,6 +1,6 @@
 @font-face {
 	font-family: gotham;
-	src: url(GothaProBol.otf);
+	src: url(GothaProLig.otf);
 }
 body {
     font-family: gotham;
@@ -75,12 +75,10 @@ ul {
      position: relative;
  }
  .ArtText {
-     display: block;
+	 position: relative;
      width: 90%;
      top: 5%;
      left: 5%;
-     min-height: 100px;
-     position: absolute;
      border: 1px;
      box-shadow: 0 0 5px rgba(0,0,0,0.2);
  }
@@ -172,9 +170,28 @@ ul {
     right: 20px;
 }
 .likeshare {
-    width: 100%;
-    text-align: right;
+	text-align: center;
+	left: 70%;
+	width: 30%;
+	height: 40px;
+	position: relative;
 }
-.likediv img{
+.likeshare div {
+	display: inline-block;
+	position: relative;
+}
+.LikesCount {
+	width: 30%;
+	top: 3px;
+}
+.likediv {
+	width: 30%;
+	top: 8px;
+}
+.likediv img {
 	cursor:pointer;
+}
+.share {
+	width: 40%;
+	top: 3px;
 }

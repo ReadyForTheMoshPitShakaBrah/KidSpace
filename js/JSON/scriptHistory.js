@@ -38,7 +38,7 @@ $(document).ready(function() {
   $(".list").on('click',function(event){
     var target = event.target;
 
-	if($(target).closest(".ticket").attr('class')=='ticket')show($(target).closest(".ticket").attr('id'));
+	if($(target).attr('class')=='ticket')show($(target).closest(".ticket").attr('id'));
 	$('.click').removeClass('click').addClass('ticket');
 	$(target).closest('.ticket').removeClass('ticket').addClass('click');
   });
