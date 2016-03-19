@@ -20,8 +20,10 @@ $(document).ready(function() {
 		  var empty='';
 		  $('.adultTickets').html('');
 		  $('.childTickets').html('');
+		  $('#'+id).removeClass('ticket').addClass('click');	
+		  
 	  for(var i=0; i<data[id].tickets.length;i++){
-		  if(data[id].tickets[i].type==="adult"){
+		  if(data[id].tickets[i].type=="adult"){
 		  empty='<div class="info"><p>смейный билет</p><p>взрослый 15+ лет</p>#'+data[id].tickets[i].ticketid+'</div>';
 	      $('.adultTickets').append(empty);
 		  }
@@ -33,11 +35,9 @@ $(document).ready(function() {
   }
   show(0); //при загрузке страницы выбирается первый элемент
   $(".list").on('click',function(event){
-    var target = event.target;
-    if (target.tagName != 'DIV') {
-    target = target.parentNode;
-    }    
-	show($(target).closest(".ticket").attr('id'));
+    var target = event.target;    
+	
+	if($(target).attr('class')=='ticket')show($(target).closest(".ticket").attr('id'));
 	$('.click').removeClass('click').addClass('ticket');
 	$(target).closest('.ticket').removeClass('ticket').addClass('click');	
   });
