@@ -7,7 +7,7 @@
 @font-face {
 		font-family: gotham;
 		src: url(GothaProBol.otf);
-		font-weight: bold;;
+		font-weight: bold;
 		font-style: normal;
 }
 body {
@@ -162,23 +162,28 @@ ul {
 .ArtTitle {
 	font-weight: bold;
 	padding-top: 10px;
-	height: 40px;
+	min-height: 20px;
   text-align: center;
   font-size: 1.2em;
 }
 .ArtWork {
-	padding: 10px;
+	overflow:hidden;
+	padding: 15px;
   text-indent: 20px;
+  margin-bottom: 10px;
+
 }
 .ArtImage {
-    position: relative;
-    left: 5%;
-    width: 90%;
-    display: block;
+
+
+    width: 100%;
+
 }
 .ArtImage img{
-	margin-top: 20px;
+	position: relative;
+    padding-top: 10px;
     width: 100%;
+	float:left
 }
 #townprogress {
     position: relative;
@@ -223,3 +228,5 @@ ul {
 .fa-share-alt {
 	color: #969696;
 }
+
+

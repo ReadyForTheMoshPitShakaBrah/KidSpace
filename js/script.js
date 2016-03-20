@@ -53,6 +53,7 @@ $(document).ready(function() {
           article: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           url: false,
           likes: 8,
+		  size:100,
           isLiked: true,
       },
         {
@@ -61,11 +62,58 @@ $(document).ready(function() {
           url: "imgs/article1.png",
           likes: 69,
           isLiked: false,
+		  size:100,
+		  position:"top"
+		  
       },
         {
           title: "ВСЕ СЛЕДЫ ВЕДУТ В КИДСПЕЙС",
           article: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           url: "imgs/article1.png",
+          likes: 69,
+          isLiked: false,
+		  size:100,
+		  position:"bottom"
+      },
+        {
+          title: "ВСЕ СЛЕДЫ ВЕДУТ В КИДСПЕЙС",
+          article: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquaLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquaLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquaLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquaLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquaLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquaLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inc",
+          url: "imgs/article1.png",
+          likes: 69,
+          isLiked: false,
+		  size:50,
+		  horizontPos:"right"
+      },
+        {
+          title: "ВСЕ СЛЕДЫ ВЕДУТ В КИДСПЕЙС",
+          article: "123123123Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquaadipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquaLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquaLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquaLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididu.",
+          url: "imgs/article1.png",
+          likes: 69,
+          isLiked: false,
+		  size: 30,
+		  horizontPos:"left"
+      },
+        {
+          title: "ВСЕ СЛЕДЫ ВЕДУТ В КИДСПЕЙС",
+          article: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          url: "imgs/article1.png",
+          likes: 69,
+		  size:100,
+          isLiked: false,
+      },
+        {
+          title: "ВСЕ СЛЕДЫ ВЕДУТ В КИДСПЕЙС",
+          article: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          url: "imgs/article1.png",
+          likes: 69,
+		  size:100,
+          isLiked: false,
+      },
+        {
+          title: "ВСЕ СЛЕДЫ ВЕДУТ В КИДСПЕЙС",
+          article: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          url: "imgs/article1.png",
+		  size:100,
           likes: 69,
           isLiked: false,
       },
@@ -74,12 +122,22 @@ $(document).ready(function() {
           article: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           url: "imgs/article1.png",
           likes: 69,
+		  size:100,
           isLiked: false,
       },
         {
           title: "ВСЕ СЛЕДЫ ВЕДУТ В КИДСПЕЙС",
           article: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           url: "imgs/article1.png",
+          likes: 69,
+		  size:100,
+          isLiked: false,
+      },
+        {
+          title: "ВСЕ СЛЕДЫ ВЕДУТ В КИДСПЕЙС",
+          article: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          url: "imgs/article1.png",
+		  size:100,
           likes: 69,
           isLiked: false,
       },
@@ -88,12 +146,30 @@ $(document).ready(function() {
           article: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           url: "imgs/article1.png",
           likes: 69,
+		  size:100,
           isLiked: false,
       },
         {
           title: "ВСЕ СЛЕДЫ ВЕДУТ В КИДСПЕЙС",
           article: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           url: "imgs/article1.png",
+          likes: 69,
+		  size:100,
+          isLiked: false,
+      },
+        {
+          title: "ВСЕ СЛЕДЫ ВЕДУТ В КИДСПЕЙС",
+          article: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          url: "imgs/article1.png",
+          likes: 69,
+		  size:100,
+          isLiked: false,
+      },
+        {
+          title: "ВСЕ СЛЕДЫ ВЕДУТ В КИДСПЕЙС",
+          article: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          url: "imgs/article1.png",
+		  size:100,
           likes: 69,
           isLiked: false,
       },
@@ -102,12 +178,30 @@ $(document).ready(function() {
           article: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           url: "imgs/article1.png",
           likes: 69,
+		  size:100,
           isLiked: false,
       },
         {
           title: "ВСЕ СЛЕДЫ ВЕДУТ В КИДСПЕЙС",
           article: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           url: "imgs/article1.png",
+          likes: 69,
+		  size:100,
+          isLiked: false,
+      },
+        {
+          title: "ВСЕ СЛЕДЫ ВЕДУТ В КИДСПЕЙС",
+          article: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          url: "imgs/article1.png",
+          likes: 69,
+		  size:100,
+          isLiked: false,
+      },
+        {
+          title: "ВСЕ СЛЕДЫ ВЕДУТ В КИДСПЕЙС",
+          article: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          url: "imgs/article1.png",
+		  size:100,
           likes: 69,
           isLiked: false,
       },
@@ -116,12 +210,14 @@ $(document).ready(function() {
           article: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           url: "imgs/article1.png",
           likes: 69,
+		  size:100,
           isLiked: false,
       },
         {
           title: "ВСЕ СЛЕДЫ ВЕДУТ В КИДСПЕЙС",
           article: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           url: "imgs/article1.png",
+		  size:100,
           likes: 69,
           isLiked: false,
       },
@@ -130,93 +226,39 @@ $(document).ready(function() {
           article: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           url: "imgs/article1.png",
           likes: 69,
-          isLiked: false,
-      },
-        {
-          title: "ВСЕ СЛЕДЫ ВЕДУТ В КИДСПЕЙС",
-          article: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          url: "imgs/article1.png",
-          likes: 69,
-          isLiked: false,
-      },
-        {
-          title: "ВСЕ СЛЕДЫ ВЕДУТ В КИДСПЕЙС",
-          article: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          url: "imgs/article1.png",
-          likes: 69,
-          isLiked: false,
-      },
-        {
-          title: "ВСЕ СЛЕДЫ ВЕДУТ В КИДСПЕЙС",
-          article: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          url: "imgs/article1.png",
-          likes: 69,
-          isLiked: false,
-      },
-        {
-          title: "ВСЕ СЛЕДЫ ВЕДУТ В КИДСПЕЙС",
-          article: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          url: "imgs/article1.png",
-          likes: 69,
-          isLiked: false,
-      },
-        {
-          title: "ВСЕ СЛЕДЫ ВЕДУТ В КИДСПЕЙС",
-          article: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          url: "imgs/article1.png",
-          likes: 69,
-          isLiked: false,
-      },
-        {
-          title: "ВСЕ СЛЕДЫ ВЕДУТ В КИДСПЕЙС",
-          article: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          url: "imgs/article1.png",
-          likes: 69,
-          isLiked: false,
-      },
-        {
-          title: "ВСЕ СЛЕДЫ ВЕДУТ В КИДСПЕЙС",
-          article: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          url: "imgs/article1.png",
-          likes: 69,
-          isLiked: false,
-      },
-        {
-          title: "ВСЕ СЛЕДЫ ВЕДУТ В КИДСПЕЙС",
-          article: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          url: "imgs/article1.png",
-          likes: 69,
-          isLiked: false,
-      },
-        {
-          title: "ВСЕ СЛЕДЫ ВЕДУТ В КИДСПЕЙС",
-          article: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          url: "imgs/article1.png",
-          likes: 69,
-          isLiked: false,
-      },
-        {
-          title: "ВСЕ СЛЕДЫ ВЕДУТ В КИДСПЕЙС",
-          article: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          url: "imgs/article1.png",
-          likes: 69,
+		  size:100,
           isLiked: false,
       }
   ];
     function createElem(id, articleElem){
             var imgLike;
-            var currentArticle = '<div class="ArtField" id="'+id+'"><div class="ArtText">'
+            var currentArticle = '<div class="ArtField" id="'+id+'"><div class="ArtText">';			
             currentArticle += '<div class="ArtTitle">'+articleElem.title+'</div>';
-            currentArticle += '<div class="ArtWork">'+articleElem.article+'</div>';
-            if (articleElem.url != false) {
-                currentArticle += '<div class="ArtImage"><img src='+articleElem.url+'></div>';
-            }
+			if(articleElem.size==100){
+			if(articleElem.url!=false){
+               if(articleElem.position=="bottom"){
+			    currentArticle += '<div class="ArtWork">'+articleElem.article+'<div class="ArtImage"><img src='+articleElem.url+'></div></div>';
+			    }
+			    else{
+			    currentArticle += '<div class="ArtWork">'+'<div class="ArtImage"><img src='+articleElem.url+'></div>'+articleElem.article+'</div>';
+			    }
+			}
+			else{currentArticle += '<div class="ArtWork">'+articleElem.article+'</div>';
+			}
+			}
+			else{	
+				if(articleElem.horizontPos=="right"){
+				  currentArticle += '<div class="ArtWork"><div class="ArtImage" style="float:right; margin-left:10px; width:'+articleElem.size+'%"><img src='+articleElem.url+' width=50% style="float:left"></div>'+articleElem.article+'</div>'; 
+				  } 
+				  else{
+					  currentArticle += '<div class="ArtWork"><div class="ArtImage" style="float:left; margin-right:10px; width:'+articleElem.size+'%"><img src='+articleElem.url+' width=50% ></div>'+articleElem.article+'</div>';}
+				  }				
             if(articleElem.isLiked) {
        	        imgLike= "<div class='likediv'><img src=imgs/liked.png></img></div>";
-			}
-            else {
-                imgLike= "<div class='likediv'><img src=imgs/nonliked.png></img></div>";
-              }
+			     }
+             else {
+                   imgLike= "<div class='likediv'><img src=imgs/nonliked.png></img></div>";
+                 }
             currentArticle += '<div class="likeshare"><div class="LikesCount">' + articleElem.likes + '</div>'+ imgLike + '<div class="share"><i class="fa fa-share-alt fa-lg"></i></div></div></div>';
             $(".content").append(currentArticle);
     }
@@ -272,4 +314,5 @@ $(document).ready(function() {
        	}
        		$("#"+$(target).closest('.ArtField').attr('id')+' .LikesCount').html(arrayArcticle[$(target).closest('.ArtField').attr('id')].likes);
         });
+		
 });
