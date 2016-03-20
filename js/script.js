@@ -295,12 +295,12 @@ $(document).ready(function() {
     createNotice(2,"А вот теперь у вашего ребёнка траблы");
     if (notice == 0) $(".notice").hide();
 
-    $(".exet").on("click", function(event) {
+    /*$(".exet").on("click", function(event) {
         var target = event.target;
         $($($(target).parent()).parent()).hide();
         notice--;
         if (notice == 0) $(".notice").hide();
-    })
+    })*/
      $('body').on("click",'.likediv img', function(event) {
 
         var target = event.target;
@@ -314,5 +314,9 @@ $(document).ready(function() {
        	}
        		$("#"+$(target).closest('.ArtField').attr('id')+' .LikesCount').html(arrayArcticle[$(target).closest('.ArtField').attr('id')].likes);
         });
+	 $(".exet").click(function () {
+      $(this).parent().slideUp("slow");
+        notice--;
+        if (notice == 0) $(".notice div").slideUp("slow");});
 		
 });
