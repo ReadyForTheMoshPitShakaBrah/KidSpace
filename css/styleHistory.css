@@ -20,7 +20,6 @@ body {
 .list{
 	top:0;
  	position: absolute;
-
 	width:100%;
 	height: 100%;
 	overflow: auto;
@@ -33,9 +32,9 @@ body {
 	border-color: #6396ca;
 	border-style: solid;
 	background: #ffffff;
-	width:32%;
+	width: calc((60% - 270px)*0.6);
 	height: 100%;
-	left:52.5%;
+	left: calc(20% + (60% - 270px)*0.4 + 270px - 17px);
 	padding-left: 20px;
 }
 h4 {
@@ -123,14 +122,14 @@ ul {
 	border-width: 0px 0px 1px 0px;
 	border-color: #f2f2f2;
 	border-style:solid;
-	width: 98%;
+	width: 100%;
 	}
 .content {
 	top:0;
  	position: absolute;
-	width:19%;
+	width: calc((60% - 270px)*0.4);
 	height: 100%;
-	left:35%;
+	left: calc(20% + 270px);
 	overflow: auto;
 }
 .info{
@@ -141,7 +140,7 @@ ul {
 .click{
 	cursor:default;
 	height:10%;
-	width: 98%;
+	width: 100%;
 	background:#6396ca;
 }
 .blueround {
