@@ -18,9 +18,9 @@ a {
 	text-decoration: none;
 }
 .menu {
-    left: 20%;
+    left: calc(20% + 3px);
     position: fixed;
-    width: 15%;
+    width: 270px;
     height: 100%;
     top: 0px;
     background: #f8f8f8;
@@ -28,9 +28,9 @@ a {
 .main {
     background-color: #ffffff;
     position: absolute;
-    width: 45%;
+    width: calc(60% - 270px);
     height:100%;
-    left: 35%;
+    left: calc(20% + 270px);
     top:0px;
 }
 .top {
