@@ -76,11 +76,11 @@ ul {
 	position:absolute;
 	width:calc(60% - 270px);
 	left:calc(20% + 270px);
-	height:100%;
-	padding-bottom:50px;
+
+	padding-bottom:100px;
 }
 .item{
-	font-weight:medium;
+
 	font-size:14pt;
 	display:inline-block;
 	vertical-align:top;
@@ -88,18 +88,31 @@ ul {
 	min-height:50%;}
 .photo img{ vertical-align:center;}
 .photo {height:150px;}
-.item > div{
+.item > div:not(.age):not(.type):not(.exp):not(.station):not(.name){
 	margin-top:25px;
 	margin-left:30px;
 	margin-right:30px;
 
 	text-align:center;
 	}
-	.front > div {
-	margin-bottom:25px;
+.item > .age, .item > .name, .item > .type, .item > .exp, .item > .station{
+	margin-top:25px;
+	margin-left:30px;
+	margin-right:30px;
 
-	text-align:center;
+	text-align:left;} 
+.front  > .age, .front  > .name, .front  > .type, .front  > .exp, .front  > .station{
+
+
+	text-align:left;} 
+	.front > div:not(.photo) {
+	margin-top:25px;
+
 	}
+	.front >div:not(.age):not(.type):not(.exp):not(.station):not(.name){
+			text-align:center;
+	}
+.photo{	text-align:center;}
 .add{
 	position:absolute;
 	height:50%;
@@ -131,7 +144,7 @@ ul {
 }
 .flip-container{	
 width: calc(100% - 60px);
-height:450px;
+height:550px;
 
 	bottom:0px;
 		margin:0,0,0,0;}
@@ -187,8 +200,23 @@ height:450px;
     height:50px;	  
 	background:#6396c9;
 	  }
-	  .backButton{
-		  position:absolute;
-		  right:0px;
+ .backButton{
+    position:absolute;
+    right:0px;
 
 	  }
+.age{	vertical-align:bottom;}
+.history{
+position:relative;
+color:#dd4443;
+left:55px;
+height:120px;
+width:120px;
+border-radius:60px;
+border:1px;
+border-style: solid;
+border-color: #dd4443;
+vertical-align:middle;
+line-height: 120px;
+
+	}
