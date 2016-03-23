@@ -8,8 +8,9 @@ $(document).ready(function() {
 		$.getJSON('js/mykids.json', function(data){
 		var current='';
 		var stringList='';
-		var i=document.location.href.charAt(document.location.href.length - 1);
-		if(typeof i !="number"){i=0;}
+		var i=Number(document.location.href.charAt(document.location.href.length - 1));
+
+		if(isNaN(i)){i=0;}
 
 				current='<div class="photo"><img src="'+data[i].photo+'"></div><div class="name">'+data[i].name+' '+data[i].fam+'</div><div class="age"><i class="fa fa-child"></i><i class="fa fa-child fa-lg"></i>'+data[i].age+' лет</div><div class="type"><i class="fa fa-star-half-o"></i>'+data[i].type+'</div><div class="exp"><i class="fa fa-money"></i> '+data[i].expa+'</div><div class="station"><i class="fa fa-compass"></i> '+data[i].station+'</div>';
 		$('<div class="item"></div>').appendTo('.kid').append(current);
