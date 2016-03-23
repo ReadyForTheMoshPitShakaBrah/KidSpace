@@ -6,7 +6,46 @@
         "type": "Кидвайзер",
         "expa": 1117,
         "photo": "imgs/kids2.png",
-        "station": "на станции 'Полиция'"
+        "station": "на станции 'Полиция'",
+        "list": [
+            {
+                "icon": "imgs/icon.png",
+                "time": "19:57",
+                "action": "полиция",
+                "result": "20"
+            },
+            {
+                "icon": "imgs/icon.png",
+                "time": "19:57",
+                "action": "полиция",
+                "result": "20"
+            },
+            {
+                "icon": "imgs/icon.png",
+                "time": "19:57",
+                "action": "полиция",
+                "result": "20"
+            },
+            {
+                "icon": "imgs/icon.png",
+                "time": "19:57",
+                "action": "полиция",
+                "result": "20"
+            },
+            {
+                "icon": "imgs/icon.png",
+                "time": "19:57",
+                "action": "полиция",
+                "result": "20"
+            },
+                
+                    {
+                "icon": "imgs/icon.png",
+                "time": "19:57",
+                "action": "полиция",
+                "result": "20"
+            }
+        ]
 
     },
     {
