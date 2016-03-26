@@ -14,8 +14,10 @@ $(document).ready(function() {
 
 				current='<div class="photo"><img src="'+data[i].photo+'"></div><div class="name">'+data[i].name+' '+data[i].fam+'</div><div class="age"><i class="fa fa-child"></i><i class="fa fa-child fa-lg"></i>'+data[i].age+' лет</div><div class="type"><i class="fa fa-star-half-o"></i>'+data[i].type+'</div><div class="exp"><i class="fa fa-money"></i> '+data[i].expa+'</div><div class="station"><i class="fa fa-compass"></i> '+data[i].station+'</div>';
 		$('<div class="item"></div>').appendTo('.kid').append(current);
+		var result='';
 		for(var k=0;k<data[i].list.length;k++){
-			stringList='<div class="block"><div class="icon"><img src="'+data[i].list[k].icon+'"><div class="time">'+data[i].list[k].time+'</div></div><div class="result">'+data[i].list[k].result+'</div><div class="action">чувак прибыл на станцию '+data[i].list[k].action+'</div></div>'
+			if(data[i].list[k].result<0){result='Потрачено: <div class="red">'+data[i].list[k].result+' опыта</div>';}else{result='Заработано: <div class="blue">'+data[i].list[k].result+' опыта</div>';}
+			stringList='<div class="block"><div class="icon"><img src="'+data[i].list[k].icon+'"><div class="time">'+data[i].list[k].time+'</div></div><div class="action">чувак прибыл на станцию <h5>'+data[i].list[k].action+'</h5></div><div class="result">'+result+'</div></div>';
 		$('.history').append(stringList);
 		}
 		});

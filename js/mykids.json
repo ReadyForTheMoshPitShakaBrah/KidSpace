@@ -2,7 +2,7 @@
     {
         "name": "Розалия",
         "fam": "Тухватуллина",
-        "age": 12,
+        "age": "03,03,1998",
         "type": "Кидвайзер",
         "expa": 1117,
         "photo": "imgs/kids2.png",
@@ -18,7 +18,7 @@
                 "icon": "imgs/icon.png",
                 "time": "19:57",
                 "action": "полиция",
-                "result": "20"
+                "result": "-20"
             },
             {
                 "icon": "imgs/icon.png",
@@ -51,7 +51,7 @@
     {
         "name": "Розалин",
         "fam": "Тухватуллин",
-        "age": 10,
+        "age": "05,05,2007",
         "type": "Кидвайзер",
         "photo": "imgs/kids.png",
         "expa": 1488,
@@ -61,7 +61,7 @@
     {
         "name": "Розалин",
         "fam": "Тухватуллин",
-        "age": 10,
+        "age": "12,10,1998",
         "type": "Кидвайзер",
         "photo": "imgs/kids2.png",
         "expa": 1488,

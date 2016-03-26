@@ -117,3 +117,21 @@ ul {
 	padding:10px;	
 	height:100px;
 }
+.time{
+	text-align:center;}
+.action{
+		width:50%;
+		height:100%;
+		padding:10px;
+		text-align:center;
+		vertical-align:top;
+}
+.result{
+	height:100%;
+			text-align:center;
+		vertical-align:top;
+				padding:10px;}
+.blue{
+
+	color:#6396ca;}
+.red{color:#c53a1b;}
