@@ -50,7 +50,7 @@ $(document).ready(function() {
 			
 
 			i++;
-		stringAdd='<div  class="edit"><div class="photo"><img src="'+'imgs/photo.png'+'"></div><div class="name">'+$('#'+id+' #name').val()+' '+$('#'+id+' #fam').val()+'</div><div class="age"><i class="fa fa-child"></i><i class="fa fa-child fa-lg"></i>'+age+'</div><div class="type"><i class="fa fa-star-half-o"></i>'+'кидвайзер'+'</div><div class="exp"><i class="fa fa-money"></i> '+0+'</div><div class="station">'+'</div><div class="history"><a href="kidhistory.html#'+i+'" class="link">История</a></div></div>';
+		stringAdd='<div  class="edit"><div class="photo"><img src="'+'imgs/photo.png'+'"></div><div class="name">'+$('#'+id+' #name').val()+' '+$('#'+id+' #fam').val()+'</div><div class="age"><i class="fa fa-child"></i><i class="fa fa-child fa-lg"></i>'+age+' лет</div><div class="type"><i class="fa fa-star-half-o"></i>'+'кидвайзер'+'</div><div class="exp"><i class="fa fa-money"></i> '+0+'</div><div class="station">'+'</div><div class="history"><a href="kidhistory.html#'+i+'" class="link">История</a></div></div>';
 		     
 			$('#'+id+' .front').html(stringAdd);
 			$('#'+id+' .photo img').attr('src',$('#'+imageid+' .image img').attr('src'))
