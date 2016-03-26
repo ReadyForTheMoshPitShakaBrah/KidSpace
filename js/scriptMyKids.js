@@ -47,12 +47,13 @@ $(document).ready(function() {
 			var age = getAge($('#'+id+' #age').val());
 			
 			$('#'+id+' .front').empty();
+			var image=$('#'+imageid+' .image img').attr('src');
 
 			i++;
-		stringAdd='<div  class="edit"><div class="photo"><img src="'+'imgs/kids2.png'+'"></div><div class="name">'+$('#'+id+' #name').val()+' '+$('#'+id+' #fam').val()+'</div><div class="age"><i class="fa fa-child"></i><i class="fa fa-child fa-lg"></i>'+age+'</div><div class="type"><i class="fa fa-star-half-o"></i>'+'кидвайзер'+'</div><div class="exp"><i class="fa fa-money"></i> '+0+'</div><div class="station">'+'</div><div class="history"><a href="kidhistory.html#'+i+'" class="link">История</a></div></div>';
+		stringAdd='<div  class="edit"><div class="photo"><img src="'+image+'"></div><div class="name">'+$('#'+id+' #name').val()+' '+$('#'+id+' #fam').val()+'</div><div class="age"><i class="fa fa-child"></i><i class="fa fa-child fa-lg"></i>'+age+'</div><div class="type"><i class="fa fa-star-half-o"></i>'+'кидвайзер'+'</div><div class="exp"><i class="fa fa-money"></i> '+0+'</div><div class="station">'+'</div><div class="history"><a href="kidhistory.html#'+i+'" class="link">История</a></div></div>';
 		     
 			$('#'+id+' .front').html(stringAdd);
-			$('#'+id+' .photo img').attr('src',$('#'+imageid+' .image img').attr('src'))
+			
 			$(target).closest('#flip-toggle').toggleClass('hover');
 
 			setTimeout(function() {
