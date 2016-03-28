@@ -6,7 +6,7 @@ function include(url) {
 include ("jquery-2.2.1.min.js");
 $(document).ready(function() {
 	        $('#photoload').hide();
-
+			$("#fon").mask("+7"+" (999) 999-9999",{placeholder:" "});
 	$.getJSON('js/profile.json', function(data){
 		$('#fam').val(data.fam);
 		$('#name').val(data.name);
