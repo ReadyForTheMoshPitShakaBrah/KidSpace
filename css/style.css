@@ -21,6 +21,7 @@ a {
     left: 400px;
     position: fixed;
     width: 270px;
+    min-height: 890px;
     height: 100%;
     top: 0px;
     background: #f8f8f8;
