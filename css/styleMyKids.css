@@ -120,6 +120,7 @@ ul {
 	width:100%;
 	text-align:center;
 	display:block;
+	cursor:pointer;
 }
 .add div{
 	padding:20px;}
@@ -198,11 +199,13 @@ vertical-align:bottom;}
     line-height: 45px;
     margin:16px;
     height:50px;
-	background:#6396c9;
+    background:#6396c9;
+    cursor:pointer;
 	  }
  .backButton{
     position:absolute;
     right:0px;
+    cursor:pointer;
 
 	  }
 .age{	vertical-align:bottom;}
@@ -212,4 +215,6 @@ vertical-align:bottom;}
 	bottom:0px;
 }
 .newitem{	margin-top:25px;}
-.image{height:150px;}
+.image{height:150px;cursor:pointer;}
+.editBut{cursor:pointer;}
+.saveButton{cursor:pointer;}
