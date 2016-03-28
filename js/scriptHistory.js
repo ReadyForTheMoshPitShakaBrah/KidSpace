@@ -12,7 +12,7 @@ $(document).ready(function() {
 		$(currentList).appendTo(".list").append(function(){var current='';
 		current='<div class="children"><span class="fa fa-child fa-x"></span><span class="InnerText"><p>'+data[i]["childcount"] + '</p></span>' +
     '</div><div class="adult"><span class="fa fa-male fa-lg"></span><span class="InnerText"><p>' + data[i]["adultcount"] + '</p></span>' +
-    '</div><div class="RightBlock"><div class="price">' + data[i]["price"] + ' ₽</div><div class="date">' + data[i]["date"] + '</div></div>';
+    '</div><div class="RightBlock"><div class="price">' + data[i]["price"] + ' <span style="font-family:rouble;">₽</span></div><div class="date">' + data[i]["date"] + '</div></div>';
 		return current;});
       }
     });
