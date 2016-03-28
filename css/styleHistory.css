@@ -10,7 +10,7 @@ body {
     font-family: gotham;
 }
 .menu {
-    left: 20%;
+    left: 400px;
     position: fixed;
     width: 270px;
     height: 100%;
@@ -28,13 +28,13 @@ body {
 	overflow: auto;
 	top:0;
 	position: fixed;
-	border-width: 0px 1px 0px 1px;
+	border-width: 0px 0px 0px 1px;
 	border-color: #6396ca;
 	border-style: solid;
 	background: #ffffff;
-	width: calc((60% - 270px)*0.6);
+	width: 780px;
 	height: 100%;
-	left: calc(20% + (60% - 270px)*0.4 + 270px - 17px);
+	left: 990px;
 	padding-left: 20px;
 }
 h4 {
@@ -127,9 +127,9 @@ ul {
 .content {
 	top:0;
  	position: absolute;
-	width: calc((60% - 270px)*0.4);
+	width: 337px;
 	height: 100%;
-	left: calc(20% + 270px);
+	left: 670px;
 	overflow: auto;
 }
 .info{
