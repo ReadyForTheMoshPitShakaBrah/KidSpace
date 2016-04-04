@@ -19,14 +19,14 @@ body {
     font-family: gotham;
 }
 .menu {
-    left: 400px;
     position: fixed;
     width: 270px;
+    min-height: 890px;
     height: 100%;
     top: 0px;
+	 left: 0px;
     background: #f8f8f8;
 }
-
 h4 {
 	font-size: 22px;
 }

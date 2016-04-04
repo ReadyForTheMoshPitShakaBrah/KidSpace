@@ -18,12 +18,12 @@ a {
 	text-decoration: none;
 }
 .menu {
-    left: 400px;
     position: fixed;
     width: 270px;
     min-height: 890px;
     height: 100%;
     top: 0px;
+	 left: 0px;
     background: #f8f8f8;
 }
 .main {
@@ -31,7 +31,7 @@ a {
     position: absolute;
     width: 1100px;
     height:100%;
-    left: 670px;
+    left: 270px;
     top:0px;
 }
 .top {
