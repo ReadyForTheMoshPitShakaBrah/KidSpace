@@ -18,26 +18,23 @@ a {
 	text-decoration: none;
 }
 .menu {
-    left: 400px;
     position: fixed;
     width: 270px;
     min-height: 890px;
     height: 100%;
     top: 0px;
+	 left: 20%;
     background: #f8f8f8;
 }
 .main {
-    background-color: #ffffff;
-    position: absolute;
-    width: 1100px;
-    height:100%;
-    left: 670px;
-    top:0px;
+    position: relative;
+    width: calc(60% - 270px);
+    left: calc(270px + 20%);
 }
 .top {
-    position: relative;
+    position: absolute;
     width: 770px;
-    height: 25%;
+    height: 150px;
 }
 .middleblock {
 	left: calc(5% + 270px);
@@ -48,13 +45,14 @@ a {
 .content {
     position: relative;
     width: 470px;
+	 top: 150px;
 }
 .note {
     position: absolute;;
     width: 300px;
     height: 90%;
 		left: 470px;
-    top: 25%;
+    top: 150px;
 }
 .logo {
     width: 100%;
@@ -103,7 +101,7 @@ ul {
      box-shadow: 0 0 5px rgba(0,0,0,0.2);
  }
  .notice {
-	 width: 270px;
+	 width: 300px;
      position: relative;
  }
  .notice div {

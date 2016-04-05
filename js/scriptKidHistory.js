@@ -12,7 +12,7 @@ $(document).ready(function() {
 
 		if(isNaN(i)){i=0;}
 
-				current='<div class="photo"><img src="'+data[i].photo+'"></div><div class="name">'+data[i].name+' '+data[i].fam+'</div><div class="age"><i class="fa fa-child"></i><i class="fa fa-child fa-lg"></i>'+data[i].age+' лет</div><div class="type"><i class="fa fa-star-half-o"></i>'+data[i].type+'</div><div class="exp"><i class="fa fa-money"></i> '+data[i].expa+'</div><div class="station"><i class="fa fa-compass"></i> '+data[i].station+'</div>';
+				current='<div class="photo"><img src="'+data[i].photo+'"></div><div class="name">'+data[i].name+' '+data[i].fam+'</div><div class="age">'+data[i].age+' лет</div><div class="type">'+data[i].type+'</div><div class="exp">'+data[i].expa+'</div><div class="station">'+data[i].station+'</div>';
 		$('<div class="item"></div>').appendTo('.kid').append(current);
 		var result='';
 		for(var k=0;k<data[i].list.length;k++){
