@@ -1,8 +1,4 @@
-html,body{
-    margin:0px;
-    padding:0px;
-    font-family: 'PT Serif', serif;
-}
+
 body{
 	padding-top:60px;
 }
@@ -109,49 +105,49 @@ width: 180px;}
     background: url('../img/background.svg') -11px -9px no-repeat;
 }
 .item-2:before{
-    
+
         background-position:-11px -56px;
 }
 .item-3:before{
-    
+
         background-position:-11px -103px;
 
 }
 .item-4:before{
-    
+
         background-position:-11px -149px;
 
 }
 .item-5:before{
-    
+
         background-position:-11px -196px;
 
 }
 .item-6:before{
-    
+
 
         background-position:-11px -243px;
 }
 .item-7:before{
-    
+
         background-position:-11px -290px;
 
 }
 .item-8:before{
-    
+
 
         background-position:-8px -337px;
         margin-left:-3px;
 
 }
 .item-9:before{
-    
+
         background-position:-8px -385px;
         margin-left:-3px;
 
 }
 .item-10:before{
-    
+
         background-position:-11px 0px;
 
 }
@@ -188,7 +184,7 @@ width: 180px;}
     opacity: 1;
 }
 .important{
-	opacity:0; 
+	opacity:0;
     cursor: pointer;
 }
 .important:hover{
@@ -308,7 +304,7 @@ input:focus{
     background: url('../img/background.svg') -120px -584px no-repeat;
 }
 .to-the-game:before{
-    background: url('../img/background.svg') -120px -530px no-repeat;    
+    background: url('../img/background.svg') -120px -530px no-repeat;
 }
 .prof-desc h3{
     text-transform: uppercase;
@@ -414,7 +410,7 @@ top: -15px;
 width: 100%;
 text-align: center;
 padding: 0px;
-	
+
 }
 .slidesjs-pagination li{
 display:inline-block;
