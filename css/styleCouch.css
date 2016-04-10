@@ -23,13 +23,13 @@ a {
     min-height: 890px;
     height: 100%;
     top: 0px;
-	 left: 20%;
+	 left: 15%;
     background: #f8f8f8;
 }
 .main {
     position: relative;
-    width: calc(60% - 270px);
-    left: calc(270px + 20%);
+    width: calc(70% - 270px);
+    left: calc(270px + 15%);
 }
 .top {
     position: relative;

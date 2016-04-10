@@ -19,7 +19,7 @@ body {
     min-height: 890px;
     height: 100%;
     top: 0px;
-	 left: 20%;
+	 left: 15%;
     background: #f8f8f8;
 }
 .list{
@@ -37,9 +37,9 @@ body {
 	border-color: #6396ca;
 	border-style: solid;
 	background: #ffffff;
-	width: calc(60% - 270px - 337px);
+	width: calc(70% - 270px - 337px);
 	height: 100%;
-	left: calc(20% + 270px + 320px);
+	left: calc(15% + 270px + 320px);
 	padding-left: 20px;
 }
 h4 {
@@ -131,7 +131,7 @@ ul {
  	position: absolute;
 	width: 337px;
 	height: 100%;
-	left: calc(270px + 20%);
+	left: calc(270px + 15%);
 	overflow: auto;
 }
 .info{

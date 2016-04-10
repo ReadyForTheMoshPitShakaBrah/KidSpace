@@ -24,7 +24,7 @@ body {
     min-height: 890px;
     height: 100%;
     top: 0px;
-	 left: 20%;
+	 left: 15%;
     background: #f8f8f8;
 }
 h4 {
@@ -80,7 +80,7 @@ ul {
 .red{color:#c53a1b;}
 .profile{
 	position:absolute;
-	left: calc(270px + 20%);
+	left: calc(270px + 15%);
 	width:215px;
 	height:625px;
 	margin:40px;}

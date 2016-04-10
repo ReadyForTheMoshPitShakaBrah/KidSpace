@@ -25,10 +25,10 @@ $(document).ready(function() {
 	$.getJSON('js/mykids.json', function(data){
 		var current='';
 
-		
+
 		for( i=0;i<data.length;i++){
 			var age = getAge(data[i].age);
-			current='<div class="flip-container" id="flip-toggle" ontouchstart="this.classList.toggle(\'default\');"><div class="flipper"><div class="front"><div  class="edit"><div class="photo"><img src="'+data[i].photo+'"></div><div class="name">'+data[i].name+' '+data[i].fam+'</div><div class="age"><i class="fa fa-child"></i><i class="fa fa-child fa-lg"></i>'+age+' лет</div><div class="type"><i class="fa fa-star-half-o"></i>'+data[i].type+'</div><div class="exp"><i class="fa fa-money"></i> '+data[i].expa+'</div><div class="station"><i class="fa fa-compass"></i> '+data[i].station+'</div><div class="history"><a href="kidhistory.html#'+i+'" class="link">История</a></div><div class="editBut">Редактирование</div></div></div><div class="back"><div class="backButton">X</div></div>';
+			current='<div class="flip-container" id="flip-toggle" ontouchstart="this.classList.toggle(\'default\');"><div class="flipper"><div class="front"><div  class="edit"><div class="photo"><img src="'+data[i].photo+'"></div><div class="name"><div>'+data[i].fam+' '+data[i].name+'</div></div><div class="age"><div class="symbol"><i class="fa fa-child"></i><i class="fa fa-child fa-lg"></i></div><div class="text">'+age+' лет</div></div><div class="type"><div class="symbol"><i class="fa fa-star-half-o fa-lg"></i></div><div class="text">'+data[i].type+'</div></div><div class="exp"><div class="symbol"><i class="fa fa-money  fa-lg"></i></div><div class="text">'+data[i].expa+'</div></div><div class="station"><div class="symbol"><i class="fa fa-compass fa-lg"></i></div><div class="text">'+data[i].station+'</div></div><div class="history"><a href="kidhistory.html#'+i+'" class="link">История</a></div><div class="editBut">Редактирование</div></div></div><div class="back"><div class="backButton">X</div></div>';
 		$('<div class="item" id="'+i+'"></div>').appendTo('.list').append(current);
 		stringEdit='<div class="image"><img src="'+data[i].photo+'"></div><div>Фамилия:<input  class="textbox" text id="fam" value="'+data[i].fam+'"></div><div>Имя<input  class="textbox" text id="name" value="'+data[i].name+'"></div><div>Дата:<input  class="textbox"  text id="age" value="'+data[i].age+'"></div><div class="saveButton">Редактировать</div>';
 		$('<div class="edititem"></div>').appendTo('#'+i+' .back').append(stringEdit);
@@ -45,13 +45,13 @@ $(document).ready(function() {
 			var target=event.target;
 			var id=$(target).closest('.item').attr('id');
 			var age = getAge($('#'+id+' #age').val());
-			
+
 			$('#'+id+' .front').empty();
-			
+
 
 			i++;
-		stringAdd='<div  class="edit"><div class="photo"><img src="'+'imgs/photo.png'+'"></div><div class="name">'+$('#'+id+' #name').val()+' '+$('#'+id+' #fam').val()+'</div><div class="age"><i class="fa fa-child"></i><i class="fa fa-child fa-lg"></i>'+age+' лет</div><div class="type"><i class="fa fa-star-half-o"></i>'+'кидвайзер'+'</div><div class="exp"><i class="fa fa-money"></i> '+0+'</div><div class="station">'+'</div><div class="history"><a href="kidhistory.html#'+i+'" class="link">История</a></div></div>';
-		     
+		stringAdd='<div  class="edit"><div class="photo"><img src="'+'imgs/photo.png'+'"></div><div class="name"><div>'+$('#'+id+' #name').val()+' '+$('#'+id+' #fam').val()+'</div></div><div class="age"><div class="symbol"><i class="fa fa-child"></i><i class="fa fa-child fa-lg"></i></div><div class="text">'+age+' лет</div></div><div class="type"><div class="symbol"><i class="fa fa-star-half-o"></i></div><div class="text">'+'кидвайзер'+'</div></div><div class="exp"><div class="symbol"><i class="fa fa-money"></i></div><div class="text">'+0+'</div></div><div class="station"><div class="symbol">'+'</div></div><div class="history"><a href="kidhistory.html#'+i+'" class="link">История</a></div></div>';
+
 			$('#'+id+' .front').html(stringAdd);
 			$('#'+id+' .photo img').attr('src',$('#'+imageid+' .image img').attr('src'))
 			$(target).closest('#flip-toggle').toggleClass('hover');
@@ -66,17 +66,17 @@ $(document).ready(function() {
 			$('body').on("click",'.editBut', function(event) {
 				var target=event.target;
 				$(target).closest('#flip-toggle').toggleClass('hover');
-				
+
 			});
 			$('body').on("click",'.add', function(event) {
 				var target=event.target;
 				$(target).closest('#flip-toggle').toggleClass('hover');
-				
+
 			});
 			$('body').on("click",'.backButton', function(event) {
 				var target=event.target;
 				$(target).closest('#flip-toggle').toggleClass('hover');
-				
+
 			});
 			$('body').on("click",'.saveButton', function(event) {
 			var target=event.target;
@@ -87,27 +87,27 @@ $(document).ready(function() {
 			$(target).closest('#flip-toggle').toggleClass('hover');
 			$('#'+id+' .photo img').attr('src',$('#'+id+' .image img').attr('src'));
 			});
-			
+
 			$('body').on('click','.image',function(event){
 				imageid=$(this).closest('.item').attr('id');
-				
-			$('input[type=file]').click();		
+
+			$('input[type=file]').click();
 			});
-						
+
 			function readURL(input) {
              if (input.files && input.files[0]) {
               var reader = new FileReader();
                reader.onload = function (e) {
                $('#'+imageid+' .image img').attr('src', e.target.result);
-               } 
+               }
              reader.readAsDataURL(input.files[0]);
 		}
 		}
-		
-			$("#photoload").change(function(){			
-			
+
+			$("#photoload").change(function(){
+
 			readURL(this);
 			//var id=$(target).closest('.item').attr('id');
-			//$('#'+id+' .photo img').attr('src',$('#photoload').val());	
+			//$('#'+id+' .photo img').attr('src',$('#photoload').val());
 			});
 });
