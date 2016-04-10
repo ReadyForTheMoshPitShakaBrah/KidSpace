@@ -1,0 +1,598 @@
+
+body{
+	padding-top:60px;
+}
+p{
+    line-height: 140%;
+}
+h3{
+     font-family:"Geometria Heavy", Avenir, 'Segoe UI', Verdana, sans-serif; font-weight:900; font-style:normal;
+}
+h2{
+     font-family:"Geometria Heavy", Avenir, 'Segoe UI', Verdana, sans-serif; font-weight:900; font-style:normal;
+}
+.topnav{
+    position: fixed;
+    background: #1498D6;
+    z-index: 210;
+    width: 100%;
+    height: 60px;
+    top: 0px;}
+.topnav_logo{
+float:left;
+ padding-top: 5px;
+padding-left: 10px;
+background: #FFF;
+padding-right: 20px;
+padding-bottom: 2px;
+width: 180px;}
+.topnav_logo a{
+    font-size: 24px;
+    color:#000;
+     font-family:"Geometria Heavy", Avenir, 'Segoe UI', Verdana, sans-serif; font-weight:900; font-style:normal;
+    text-decoration: none;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.topnav_menu{
+    position: absolute;
+    right: 0px;
+    top: 0px;}
+.topnav_menubutton{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    right: 0px;
+    cursor: pointer;}
+.topnav_menubutton:before{
+    content: '';
+    display: block;
+    margin: 0px;
+    position: fixed;
+    width: 32px;
+    height: 26px;
+    background: url('../img/background.svg') 0px -610px no-repeat;
+    top: 18px;
+    right: 10px;
+}
+.topnav_menuul{
+    position: fixed;
+    top: 60px;
+    right: -310px;
+    width: 310px;
+    height: 100%;
+    background: #FFF;
+    z-index: 110;
+    -webkit-transition: right .4s ease-in-out;
+    -o-transition: right .4s ease-in-out;
+    transition: right .4s ease-in-out;
+}
+.topnav_menumain{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    background: #FFF;
+    padding-top: 44px;}
+.topnav_menumain li{
+    font-size: 24px;
+    font-weight: bold;
+     font-family:"Geometria Heavy", Avenir, 'Segoe UI', Verdana, sans-serif; font-weight:900; font-style:normal;
+    margin-left: 44px;
+    margin-bottom: 16px;}
+.topnav_menumain li a{
+    text-decoration: none;
+    color: #1498D6;
+    padding-left: 41px;}
+.topnav_menumain li a.color{
+    color:#E8482C;
+}
+.item-1:before,
+.item-2:before,
+.item-3:before,
+.item-4:before,
+.item-5:before,
+.item-6:before,
+.item-7:before,
+.item-8:before,
+.item-9:before{
+    display: block;
+    content: '';
+    position: absolute;
+    margin: 0px;
+    width: 32px;
+    height: 32px;
+    background: url('../img/background.svg') -11px -9px no-repeat;
+}
+.item-2:before{
+
+        background-position:-11px -56px;
+}
+.item-3:before{
+
+        background-position:-11px -103px;
+
+}
+.item-4:before{
+
+        background-position:-11px -149px;
+
+}
+.item-5:before{
+
+        background-position:-11px -196px;
+
+}
+.item-6:before{
+
+
+        background-position:-11px -243px;
+}
+.item-7:before{
+
+        background-position:-11px -290px;
+
+}
+.item-8:before{
+
+
+        background-position:-8px -337px;
+        margin-left:-3px;
+
+}
+.item-9:before{
+
+        background-position:-8px -385px;
+        margin-left:-3px;
+
+}
+.item-10:before{
+
+        background-position:-11px 0px;
+
+}
+.dog{
+    margin-left: 20px;
+    font-family:"Geometria Medium", Avenir, 'Segoe UI', Verdana, sans-serif; font-weight:500; font-style:normal;
+    text-decoration: underline;
+    padding-left: 63px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+.dog:before{
+     display: block;
+    content: '';
+    position: absolute;
+    margin: 0px;
+    width: 32px;
+    height: 32px;
+    background: url('../img/background.svg') -0px -730px no-repeat;
+    margin-left: -42px;
+    margin:-5px 0px 0px -40px;
+}
+
+.help-option{
+    -webkit-transition: opacity 0.6s;
+    -o-transition: opacity 0.6s;
+    transition: opacity 0.6s;
+    opacity: 0;
+}
+.show{
+    -webkit-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+    opacity: 1;
+}
+.important{
+	opacity:0;
+    cursor: pointer;
+}
+.important:hover{
+/*    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: transform 0.4s;
+    -o-transition: transform 0.4s;
+    transition: transform 0.4s;*/
+}
+.help-option{
+    position: absolute;
+    top: -160px;
+
+    padding-left:50px;
+    width:380px;
+}
+.help-option h4{
+    font-size: 18px;
+    margin-bottom:  -10px;
+}
+.help-option .thenumber{
+    position: absolute;
+    top: 7px;
+    left: 0px;
+    background: #000;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+     font-family:"Geometria Heavy", Avenir, 'Segoe UI', Verdana, sans-serif; font-weight:900; font-style:normal;
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFF;
+    background: #E7412B;
+    padding-top: 3px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.all-helpers{
+    position: relative;
+}
+.bl .thenumber{
+    background: #1498D6;
+}
+input:focus{
+    outline: none;
+
+}
+#video{
+    overflow: hidden;
+}
+.feedback input.red{
+    border-color: #E7412B;
+    -webkit-transition: border-color 0.4s;
+    -o-transition: border-color 0.4s;
+    transition: border-color 0.4s;
+}
+.feedback input{
+    color: #1498D6;
+    text-align: center;
+}
+.rules,.thegame,.win,.gold{
+    width:1000px;
+    float:left;
+    height:600px;
+    position: relative;
+}
+.gold{
+    text-align: center;
+}
+.goldpass_frame{
+    width:4000px;
+    left:-1000px;
+    position: relative;
+    -webkit-transition: left .7s;
+    -o-transition: left .7s;
+    transition: left .7s;
+}
+.centered{
+    margin:0 auto;
+}
+.p425{
+    width: 425px;
+    text-align: left;
+}
+.win{
+    overflow: hidden;
+}
+.the-prof-img{
+    float: left;
+    width:300px;
+    text-align: center;
+    padding-top: 90px;
+}
+.prof-desc{
+    float: left;
+    width: 480px;
+}
+.back,.to-the-game{
+    position: absolute;
+    right: 12px;
+    top: 141px;
+    cursor: pointer;
+    font-size: 12px;
+    font-style: italic;
+    line-height: 12px;
+}
+
+.back:before,.to-the-game:before{
+    content: '';
+    width: 46px;
+    height: 46px;
+    position: absolute;
+    margin: -58px 0px 0px 24px;
+    background: url('../img/background.svg') -120px -584px no-repeat;
+}
+.to-the-game:before{
+    background: url('../img/background.svg') -120px -530px no-repeat;
+}
+.prof-desc h3{
+    text-transform: uppercase;
+}
+.prof-desc p strong{
+    font-size: 18px;
+}
+.prof-desc p{
+    font-size: 16px;
+}
+.blulabel{
+    background: #1498D6;
+    color: #FFF;
+    padding:4px 30px;
+}
+.blulabel h3{
+    text-transform: uppercase;
+}
+.kontakts a{
+    color:#000;
+}
+.kontakts{
+font-family:"Geometria Medium", Avenir, 'Segoe UI', Verdana, sans-serif; font-weight:500; font-style:normal;
+margin-left: 85px;
+margin-top: -13px;
+line-height: 22px;
+}
+.cult{
+    margin-left: 82px;
+    display: inline-block;
+    font-family:"Geometria Medium", Avenir, 'Segoe UI', Verdana, sans-serif; font-weight:500; font-style:normal;
+}
+.cult:before{
+    width: 27px;
+    height: 26px;
+    content: '';
+    margin:0px 0px 0px -40px;
+    position: absolute;
+    background: url('../img/background.svg') -12px -1144px no-repeat;
+}
+.other{
+    background: #FFF;
+    position: absolute;
+    bottom: 60px;
+}
+.fr2_rotate{
+display:none;
+}
+.oferta-back{
+font-size:24px;
+color:#1498d6;
+text-align:center;
+margin-bottom:80px;
+font-family:"Geometria Heavy", Avenir, 'Segoe UI', Verdana, sans-serif;
+}
+.slideframe{
+padding-top: 30px;
+margin: 0 auto;
+width: 1200px;
+height: 390px;
+overflow: hidden;
+position: relative;
+}
+.frame{
+	width:100%;
+	height:460px;
+}
+.frame h3{
+font-family:"Geometria Heavy", Avenir, 'Segoe UI', Verdana, sans-serif;
+text-transform:uppercase;
+font-size:24px;
+}
+.photo{
+width:600px;
+height:460px;
+float:left;
+}
+.photo img{
+	padding-left:120px;
+}
+.frame-desc{
+float: left;
+width: 550px;
+height: 460px;
+padding-left: 50px;
+}
+.frame-desc p.blue{
+	font-size:24px;
+	color:#1498d6;
+	font-family:"Geometria Heavy", Avenir, 'Segoe UI', Verdana, sans-serif;
+}
+.frame-desc p{
+width:380px;
+font-family:'PT Serif';
+font-weight:bold;
+}
+.frame-desc p.hh{
+	color:#1498d6;
+}
+.slidesjs-pagination{
+position: absolute;
+top: -15px;
+width: 100%;
+text-align: center;
+padding: 0px;
+
+}
+.slidesjs-pagination li{
+display:inline-block;
+margin: 3px;
+}
+.slidesjs-pagination li a{
+	width:10px;
+	padding-top:10px;
+	overflow:hidden;
+	height:0px;
+	background:#f1f3f5;
+	border-radius:50%;
+	display:inline-block;
+}
+.slidesjs-pagination li a.active{
+background:#1498d6;
+}
+#actions{
+	background:linear-gradient(to bottom, #FFF, #f1f3f5);
+}
+.hh{
+padding-left:60px;
+}
+.hh::before{
+	width:35px;
+	height:35px;
+	content:'';
+	display:block;
+	position:absolute;
+	margin:0px 0px 0px -60px;
+	background:url('../img/background.svg') 0px -992px no-repeat;
+}
+.hh strong{
+	color:#000;
+}
+.teen::before{
+	background-position:0px -1034px;
+}
+.nesessary::before{
+	background-position:0px -1080px;
+}
+.delat{
+	width:980px;
+	margin:0 auto;
+	text-align:center;
+}
+.delat table{
+	width:960px;
+	border-spacing:0px;
+	margin: 0 auto;
+}
+.delat table tr{}
+.delat table tr:first-child td{
+	font-size:16px;
+	color:#1498d6;
+	font-family:'PT Serif', arial;
+	font-weight:bold;
+	background:none;
+	}
+.delat table tr:first-child td em,.delat table tr td:first-child em{
+	font-weight:normal;
+	font-style:none;
+	color:#000;
+	font-size:14px;
+}
+.delat table tr td:first-child{
+	font-size:16px;
+	color:#1498d6;
+	font-family:'PT Serif', arial;
+	font-weight:bold;
+	background:none;
+	text-align:left;
+}
+.delat table tr td{
+	width:160px;
+	border:0px;
+	padding:0px;
+}
+.bprice{
+	vertical-align:middle;
+	height:50px;
+	background:url('../img/background.svg') -58px -990px no-repeat;
+	font-size:24px;
+	font-weight:bold;
+	font-family:"Geometria Heavy", Avenir, 'Segoe UI', Verdana, sans-serif;
+	text-align:center;
+	padding-top:18px;
+	color:#FFF;
+	border-top:3px #eeeeef solid;
+	border-bottom:3px #eeeeef solid;
+}
+.acc .bprice{
+	background-position:-58px -1063px;
+}
+.snoski p{
+	text-align:left;
+	padding-left:171px;
+	color:#e7412b;
+	font-size:12px;
+	font-family:'PT Serif';
+}
+.lgots{
+	text-align:left;
+	text-align: left;
+	padding-bottom: 83px;
+	padding-top: 50px;
+	padding-left: 250px;
+}
+.lgots:before{
+	width:105px;
+	height:95px;
+	content:'';
+	display:block;
+	position:absolute;
+	margin:-40px 0px 0px -130px;
+	background:url('../img/background.svg')  -239px -990px no-repeat;
+}
+#fr1,
+#fr2,
+#fr3,
+#fr4,
+#fr5,
+#fr6,
+#fr7,
+#fr8,
+#fr9,#game,
+#fr10,#actions{
+
+min-width:1140px;
+}
+#game{
+oveflow:hidden;
+}
+#fr1{
+
+}
+.testingframe{
+	width:980px;
+	position:relative;
+	margin:0 auto;
+	background: url('../img/prices.png') 100% 100% no-repeat;
+	overflow:hidden;
+}
+.theframe{
+	width:1960px;
+	position:relative;
+}
+.sframe{
+	width:980px;
+	float:left;
+}
+.lback{
+	text-align:left;
+	margin-left:150px;
+	margin-top:90px;
+	font-size:18px;
+}
+.lback:before{
+width: 105px;
+height: 95px;
+content: '';
+display: block;
+position: absolute;
+margin: 10px 0px 0px -130px;
+background: url('../img/background.svg') -239px -990px no-repeat;
+}
+.lback p{
+}
+.back-to-price{
+position: absolute;
+right: 12px;
+top: 141px;
+cursor: pointer;
+font-size: 12px;
+font-style: italic;
+line-height: 12px;
+}
+.back-to-price:before{
+content: '';
+width: 46px;
+height: 46px;
+position: absolute;
+margin: -58px 0px 0px 24px;
+background: url('../img/background.svg') -120px -584px no-repeat;
+}
