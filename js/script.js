@@ -9,15 +9,8 @@ $(document).ready(function() {
     var articles = '';
     var notices = '';
     var notice = 2;
-    var bubblecount = 9;
     var intown = 900;
     var town = 1000;
-    if (bubblecount != 0) {
-        var somestring = '<div id="rednote">';
-        somestring += bubblecount + '</div>';
-        $("#bubble").html(somestring);
-    }
-
     function ProgressBar(max,current) {
         var b=0;
         var a = ((current/max)*100) + '%';
@@ -64,7 +57,7 @@ $(document).ready(function() {
           isLiked: false,
 		  size:100,
 		  position:"top"
-		  
+
       },
         {
           title: "ВСЕ СЛЕДЫ ВЕДУТ В КИДСПЕЙС",
@@ -232,7 +225,7 @@ $(document).ready(function() {
   ];
     function createElem(id, articleElem){
             var imgLike;
-            var currentArticle = '<div class="ArtField" id="'+id+'"><div class="ArtText">';			
+            var currentArticle = '<div class="ArtField" id="'+id+'"><div class="ArtText">';
             currentArticle += '<div class="ArtTitle">'+articleElem.title+'</div>';
 			if(articleElem.size==100){
 			if(articleElem.url!=false){
@@ -246,13 +239,13 @@ $(document).ready(function() {
 			else{currentArticle += '<div class="ArtWork">'+articleElem.article+'</div>';
 			}
 			}
-			else{	
+			else{
 				if(articleElem.horizontPos=="right"){
-				  currentArticle += '<div class="ArtWork"><div class="ArtImage" style="float:right; margin-left:10px; width:'+articleElem.size+'%"><img src='+articleElem.url+' width=50% style="float:left"></div>'+articleElem.article+'</div>'; 
-				  } 
+				  currentArticle += '<div class="ArtWork"><div class="ArtImage" style="float:right; margin-left:10px; width:'+articleElem.size+'%"><img src='+articleElem.url+' width=50% style="float:left"></div>'+articleElem.article+'</div>';
+				  }
 				  else{
 					  currentArticle += '<div class="ArtWork"><div class="ArtImage" style="float:left; margin-right:10px; width:'+articleElem.size+'%"><img src='+articleElem.url+' width=50% ></div>'+articleElem.article+'</div>';}
-				  }				
+				  }
             if(articleElem.isLiked) {
        	        imgLike= "<div class='likediv'><img src=imgs/liked.png></img></div>";
 			     }
@@ -318,5 +311,5 @@ $(document).ready(function() {
       $(this).parent().slideUp("slow");
         notice--;
         if (notice == 0) $(".notice div").slideUp("slow");});
-		
+
 });

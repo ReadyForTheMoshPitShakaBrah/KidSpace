@@ -99,6 +99,8 @@ $(document).ready(function() {
               var reader = new FileReader();
                reader.onload = function (e) {
                $('#'+imageid+' .image img').attr('src', e.target.result);
+               $('#'+imageid+' .image img').attr('width', "auto");
+               $('#'+imageid+' .image img').attr('height', "150px");
                }
              reader.readAsDataURL(input.files[0]);
 		}

@@ -16,24 +16,26 @@ $(document).ready(function() {
 		$('#mail').val(data.mail);
 		$('.image img').attr('src', data.photo);
 
-		});			
-	$('body').on('click','.image',function(event){				
-			$('input[type=file]').click();		
+		});
+	$('body').on('click','.image',function(event){
+			$('input[type=file]').click();
 			});
-						
+
 	function readURL(input) {
              if (input.files && input.files[0]) {
               var reader = new FileReader();
                reader.onload = function (e) {
                $('.image img').attr('src', e.target.result);
-               } 
+               $('.image img').attr('width', "auto");
+               $('.image img').attr("height", "150px");
+               }
              reader.readAsDataURL(input.files[0]);
 		}
 		}
-		
-			$("#photoload").change(function(){			
-			
+
+			$("#photoload").change(function(){
+
 			readURL(this);
-	
+
 			});
 });
