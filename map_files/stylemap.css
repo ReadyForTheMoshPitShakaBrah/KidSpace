@@ -238,3 +238,12 @@ ul {
 .fa-share-alt {
 	color: #969696;
 }
+.bottomcontent {
+	float: left;
+	width: 1090px;
+	height: 100%;
+	background-color: white;
+}
+.bottomcontent p {
+	margin: 5%;
+}
